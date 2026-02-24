@@ -291,6 +291,15 @@
 
 <script src="script.js"></script>
 <script src="software.js"></script>
+<script>
+    // Ye script mobile number wale input ko target karega
+    const mobileInput = document.getElementById('mobile');
 
+    mobileInput.addEventListener('input', function (e) {
+        // Ye value se sab letters hata dega, sirf numbers bachayega
+        this.value = this.value.replace(/[^0-9]/g, '');
+    });
+</script>
 </body>
+
 </html>
