@@ -860,7 +860,7 @@ footer {
 
 /* Core Values Section */
 .core-values-section {
-    padding: 60px 20px; /* Side padding add ki hai taaki content edge se na takraye */
+    padding: 60px 20px;
     border-top: 1px solid #e2e8f0;
 }
 
@@ -885,9 +885,10 @@ footer {
     line-height: 1.7;
 }
 
+/* Desktop View: 4 Columns */
 .values-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Desktop par 4 columns */
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
 
@@ -938,27 +939,16 @@ footer {
     line-height: 1.6;
 }
 
-/* --- RESPONSIVE CODE (Yeh part add karna zaroori hai) --- */
+/* --- RESPONSIVE CODE --- */
 
-/* Tablet View (Jab screen 768px se chhoti ho) */
+/* Mobile & Tablet View (768px se chhoti screen) */
 @media (max-width: 768px) {
     .values-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns ho jayenge */
-    }
-
-    .cv-header h2 {
-        font-size: 2rem; /* Heading thoda chhota */
-    }
-}
-
-/* Mobile View (Jab screen 480px se chhoti ho) */
-@media (max-width: 480px) {
-    .values-grid {
-        grid-template-columns: 1fr; /* Sirf 1 column (Ek ke neeche ek) */
+        grid-template-columns: 1fr; /* Ek line mein ek hi value aayegi */
     }
 
     .core-values-section {
-        padding: 40px 15px; /* Mobile par kam padding */
+        padding: 40px 15px;
     }
 
     .cv-header h2 {
@@ -966,7 +956,7 @@ footer {
     }
     
     .value-card {
-        padding: 15px; /* Cards ka internal padding kam kiya */
+        padding: 15px;
     }
 }
 
