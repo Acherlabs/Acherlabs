@@ -860,7 +860,7 @@ footer {
 
 /* Core Values Section */
 .core-values-section {
-    padding: 60px 0;
+    padding: 60px 20px; /* Side padding add ki hai taaki content edge se na takraye */
     border-top: 1px solid #e2e8f0;
 }
 
@@ -887,7 +887,7 @@ footer {
 
 .values-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr); /* Desktop par 4 columns */
     gap: 20px;
 }
 
@@ -908,21 +908,10 @@ footer {
     border-color: #cbd5e1;
 }
 
-.value-card.purple {
-    border-top: 6px solid #8b5cf6;
-}
-
-.value-card.blue {
-    border-top: 6px solid #3b82f6;
-}
-
-.value-card.green {
-    border-top: 6px solid #22c55e;
-}
-
-.value-card.orange {
-    border-top: 6px solid #f97316;
-}
+.value-card.purple { border-top: 6px solid #8b5cf6; }
+.value-card.blue { border-top: 6px solid #3b82f6; }
+.value-card.green { border-top: 6px solid #22c55e; }
+.value-card.orange { border-top: 6px solid #f97316; }
 
 .value-icon {
     width: 50px;
@@ -947,6 +936,38 @@ footer {
     font-size: 0.9rem;
     color: #000000;
     line-height: 1.6;
+}
+
+/* --- RESPONSIVE CODE (Yeh part add karna zaroori hai) --- */
+
+/* Tablet View (Jab screen 768px se chhoti ho) */
+@media (max-width: 768px) {
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns ho jayenge */
+    }
+
+    .cv-header h2 {
+        font-size: 2rem; /* Heading thoda chhota */
+    }
+}
+
+/* Mobile View (Jab screen 480px se chhoti ho) */
+@media (max-width: 480px) {
+    .values-grid {
+        grid-template-columns: 1fr; /* Sirf 1 column (Ek ke neeche ek) */
+    }
+
+    .core-values-section {
+        padding: 40px 15px; /* Mobile par kam padding */
+    }
+
+    .cv-header h2 {
+        font-size: 1.75rem;
+    }
+    
+    .value-card {
+        padding: 15px; /* Cards ka internal padding kam kiya */
+    }
 }
 
 /* Why Choose */
