@@ -204,10 +204,10 @@ nav.scrolled {
 
 /* C. Footer */
 footer {
-    background: #e2e8f0;
-    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    background: #000000; /* Background color black kar diya */
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Border thoda light kiya black ke liye */
     padding: 48px 16px;
-    color: #334155;
+    color: #777777; /* Default text color grey kar diya */
 }
 
 .footer-container {
@@ -227,12 +227,12 @@ footer {
 }
 
 .footer-brand p {
-    color: #777777;
+    color: #777777; /* Description text grey */
     font-size: 14px;
 }
 
 .footer-col h4 {
-    color: #0f172a;
+    color: #ffffff; /* Headings white rakhi hain taaki dikhe */
     font-weight: 600;
     margin-bottom: 16px;
 }
@@ -246,19 +246,19 @@ footer {
 }
 
 .footer-col a {
-    color: #000000;
+    color: #777777; /* Links ko grey kiya as per request */
     font-size: 14px;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer-col a:hover {
-    color: #0f172a;
+    color: #ffffff; /* Hover karne par white ho jayenge */
 }
 
 .footer-bottom {
     padding-top: 32px;
-    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Border light kiya */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -267,7 +267,7 @@ footer {
 }
 
 .footer-bottom p {
-    color: #000000;
+    color: #777777; /* Copyright text grey */
     font-size: 14px;
 }
 
@@ -277,14 +277,14 @@ footer {
 }
 
 .footer-links a {
-    color: #000000;
+    color: #777777; /* Footer bottom links grey */
     font-size: 14px;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
-    color: #0f172a;
+    color: #ffffff; /* Hover par white */
 }
 
 /* D. Modals */
