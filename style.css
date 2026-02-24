@@ -1927,26 +1927,52 @@ footer {
     width: 50%;
 }
 
-/* Form Container - Default (Desktop) */
+/* --- Form Container (Popup Logic) --- */
+
+/* 1. Default State: Form Hidden (Jab button click nahi kiya hai) */
 .download-form-container {
-    max-height: 85vh;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
+    display: none; /* Default mein hidden rahega */
     
-    /* Desktop par center karne ke liye */
+    /* Layout & Scroll Fix (Jab dikhega toh aisa dikhega) */
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
     max-width: 400px;
+    max-height: 85vh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    
+    /* Styling */
     background: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
-    z-index: 9999; /* Ensure form is on top */
+    z-index: 9999;
 }
 
+/* 2. Active State: Jab button click ho aur JS 'active' class add ho */
+/* Agar aapka JS 'show' ya 'open' class add karta hai, toh ye word change kar dein */
+.download-form-container.active {
+    display: block;
+}
+
+/* ============================================
+   RESPONSIVE: Mobile View (Keyboard Fix)
+   ============================================ */
+@media (max-width: 768px) {
+    .download-form-container {
+        /* Mobile par top se start karein */
+        top: 20px;
+        transform: translateX(-50%);
+        
+        /* Height adjust karein */
+        max-height: calc(100vh - 40px);
+        width: 95%;
+        padding: 15px;
+    }
+}
 /* ============================================
    RESPONSIVE: Mobile View (Keyboard Issue Fix)
    ============================================ */
