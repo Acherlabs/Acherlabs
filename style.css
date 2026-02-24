@@ -287,6 +287,21 @@ footer {
     color: #ffffff; /* Hover par white */
 }
 
+/* Copyright (C) Symbol - Size Bada Karne ke liye */
+.copyright-icon {
+    font-size: 1.4em; /* Normal text se 40% bada */
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+/* Trademark (TM) Symbol - Size Chota Karne ke liye */
+.tm-icon {
+    font-size: 0.6em; /* Normal text se 40% size */
+    vertical-align: super; /* Upar align karega */
+    margin-left: 2px;
+}
+
 /* D. Modals */
 .modal {
     display: none;
