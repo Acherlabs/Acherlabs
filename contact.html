@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AChERLABs - Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+    </style>
+</head>
+<body>
+        <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo-section">
+                <div class="logo-text">
+                    <span class="logo-name">AChERLABs</span>
+                    <span class="logo-tagline">NEXT GENERATION SIMULATORS</span>
+                </div>
+            </a>
+            
+            <!-- YE SIRF EK LIST HAI (JO DESKTOP AUR MOBILE DONO KE LIYE KAAM KAREGI) -->
+            <div class="nav-links">
+                <a href="index.html" class="nav-btn">Home</a>
+                <a href="about.html" class="nav-btn">About</a>
+                <a href="software.html" class="nav-btn">Software</a>
+                <a href="contact.html" class="nav-btn active">Contact</a>
+            </div>
+            
+            <!-- Mobile Menu Button (OnClick hataya gaya hai) -->
+            <button class="mobile-menu-btn">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Contact Page Content -->
+    <div class="contact-page">
+        <div class="contact-container">
+            <div class="section-title">
+                <h2>Get in <span class="gradient">Touch</span></h2>
+                <p>Have questions about our software? Want to schedule a demo? We'd love to hear from you.</p>
+            </div>
+            
+            <div class="contact-grid">
+                <!-- 1. Contact Form (Left Side) -->
+                <div class="contact-form">
+                    <h2>Send Us a Message</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" name="name" placeholder="Your Name" required />
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Company</label>
+                            <input type="text" name="company" placeholder="Your Company Name">
+                        </div>
+                        <div class="form-group">
+                            <label>Subject</label>
+                            <select name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="demo">Request Demo</option>
+                                <option value="pricing">Pricing Inquiry</option>
+                                <option value="support">Technical Support</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea name="message" rows="5" placeholder="Tell us about your needs..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary" style="width: 100%;">Send Message</button>
+                        <p id="responseMessage"></p>
+                    </form>
+
+                    <!-- MOVED: Quick Links Box (Ab ye Form ke niche hai) -->
+                    <div class="quick-links-card" style="margin-top: 30px; margin-bottom: 0;">
+                        <h2>Quick Links</h2>
+                        <div class="quick-links-grid">
+                            <button class="quick-link-btn">→ Product Demo</button>
+                            <button class="quick-link-btn">→ Documentation</button>
+                            <button class="quick-link-btn">→ Case Studies</button>
+                            <button class="quick-link-btn">→ FAQ</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 2. Right Side: Image + Contact Info -->
+                <div class="contact-info">
+                    
+                    <!-- IMAGE -->
+                    <div class="contact-image-box">
+                        <img src="acherlab-images/contact.png" alt="Contact Us Image">
+                    </div>
+                    
+                    <!-- Contact Information -->
+                    <div class="info-card">
+                        <h2>Contact Information</h2>
+                        <!-- <div class="info-item">
+                            <div class="info-icon">📍</div>
+                            <div>
+                                <div class="label">Address</div>
+                                <div class="value">123 Tech Park, Innovation Street, Tech City, TC 12345</div>
+                            </div>
+                        </div> -->
+                        
+                        <div class="info-item">
+                            <div class="info-icon">📧</div>
+                            <div>
+                                <div class="label">Email</div>
+                                <div class="value">contact@acherlab.com</div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="info-item">
+                            <div class="info-icon">📞</div>
+                            <div>
+                                <div class="label">Phone</div>
+                                <div class="value">+1 (555) 123-4567</div>
+                            </div>
+                        </div> 
+                        <div class="info-item">
+                            <div class="info-icon">🕐</div>
+                            <div>
+                                <div class="label">Business Hours</div>
+                                <div class="value">Mon - Fri: 9:00 AM - 6:00 PM</div>
+                            </div> 
+                        </div> -->
+                    </div>
+                    
+                    <!-- Social Links -->
+                    <div class="social-card">
+                        <h2>Follow Us</h2>
+                        <div class="social-links">
+                            <button class="social-btn">LinkedIn</button>
+                            <button class="social-btn">Twitter</button>
+                            <button class="social-btn">Facebook</button>
+                            <button class="social-btn">YouTube</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo-section">
+                        <span class="logo-name" style="font-size: 20px;">AChERLABs</span>
+                    </a>
+                    <p>Next Generation Simulators for the Oil & Gas, Chemical, and Engineering Industries.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="software.html">Pipingleb</a></li>
+                        <!--<li><a href="software.html">Features</a></li>
+                        <li><a href="contact.html">Pricing</a></li>
+                        <li><a href="#">Updates</a></li>-->
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <!--<li><a href="#">Careers</a></li>
+                        <li><a href="#">News</a></li>-->
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <!--<li><a href="#">Documentation</a></li>-->
+                        <li><a href="#">Help Center</a></li>
+                        <!--<li><a href="#">Community</a></li>
+                        <li><a href="#">Status</a></li>-->
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>® 2025 AcherLab. All rights reserved.</p>
+                <!--<div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>-->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

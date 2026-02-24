@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AChERLABs - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo-section">
+                <div class="logo-text">
+                    <span class="logo-name">AChERLABs</span>
+                    <span class="logo-tagline">NEXT GENERATION SIMULATORS</span>
+                </div>
+            </a>
+            
+            <!-- YE SIRF EK LIST HAI (JO DESKTOP AUR MOBILE DONO KE LIYE KAAM KAREGI) -->
+            <div class="nav-links">
+                <a href="index.html" class="nav-btn active">Home</a>
+                <a href="about.html" class="nav-btn">About</a>
+                <a href="software.html" class="nav-btn">Software</a>
+                <a href="contact.html" class="nav-btn">Contact</a>
+            </div>
+            
+            <!-- Mobile Menu Button (OnClick hataya gaya hai) -->
+            <button class="mobile-menu-btn">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        
+        <!-- NICHE WALA DUPLICATE MOBILE-MENU DIV DELETE KAR DIYA GAYA HAI -->
+    </nav>
+
+    <!-- Hero Section -->
+<section class="hero">
+    
+    <!-- 1. Slider Area (Sirf Images) -->
+    <div class="hero-bg-slider">
+        <div class="slide active" style="background-image: url('acherlab-images/beg-0.png');"></div>
+        <div class="slide" style="background-image: url('acherlab-images/beg-1.png');"></div>
+        <div class="slide" style="background-image: url('acherlab-images/beg-2.png');"></div>
+        <div class="slide" style="background-image: url('acherlab-images/beg-3.png');"></div>
+        <div class="slide" style="background-image: url('acherlab-images/beg-4.png');"></div>
+		
+        <!-- Scroll Indicator (Slider ke neeche arrow) -->
+        <div class="scroll-indicator">
+            <svg width="24" height="24" fill="none" stroke="rgba(255,255,255,0.6)" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Hero Bottom Section: Text Left + Image Right -->
+<div class="hero-bottom-wrapper">
+    
+    <!-- Left Side: Text Content -->
+    <div class="hero-left-col">
+        <div class="hero-content">
+            <h1><span class="gradient">AChERLABs</span></h1>
+            
+            <p>We lead the way in next-generation simulation software for oil & gas, chemical processing, and engineering research. Our advanced platforms model and optimize complex hydrocarbon and process systems with high accuracy, enabling data-driven decisions that improve safety, efficiency, and operational performance - from upstream reservoir modeling to downstream refining.
+            <br><br>
+            By combining deep engineering expertise with cutting-edge computational science, we deliver powerful tools for predictive analysis, process optimization, and mission-critical decision support. Our technology empowers industries to operate smarter in an evolving energy landscape.
+            <br><br>
+            <strong><span class="italic-text">"Engineering intelligence through simulation and science."</span></strong>
+            </p>
+            
+            <div class="hero-buttons">
+                <a href="software.html" class="btn-primary">Explore</a>
+                <a href="contact.html" class="btn-secondary">Contact Us</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Right Side: Image with Corner Colors -->
+    <div class="hero-right-col">
+        <div class="image-box">
+            <!-- Yahan aapki image hai -->
+            <img src="acherlab-images/computer-frame.png" alt="Computer" class="frame-image"></div>
+            <!-- Ye corner colors ke liye hain -->
+            <span class="corner-dot top-left"></span>
+            <span class="corner-dot bottom-right"></span>
+        </div>
+    </div>
+
+</div>
+
+</div>
+
+</section>
+
+    <!-- Industries Section -->
+<section class="industries" id="industries">
+    <div class="section-title">
+        <h2>Our <span class="gradient">Industries</span></h2>
+        <p><span class="italic-text">"We provide expert solutions across various engineering domains"</span></p>
+    </div>
+
+    <div class="industries-container">
+        
+        <!-- Row 1: Text Left, Image Right -->
+        <div class="industry-row">
+            <div class="industry-content">
+                <h3>Oil and Gas <span class="gradient">Industry</span></h3>
+                <p>I develop specialized digital solutions for the oil and gas sector, focused on enhancing production efficiency, refining operations, and field analysis. Our technology platforms are designed to support engineers in simulating complex workflows, optimizing resources, and minimizing risks in both upstream and downstream environments.</p>
+                <!--<a href="#" class="industry-btn">Learn More</a>-->
+            </div>
+            <div class="industry-image">
+                <div class="industry-num">01</div>
+                <!-- Apni Image ka path yahan dalein -->
+                <img src="acherlab-images/oil.png" alt="Oil and Gas Industry">
+            </div>
+        </div>
+
+        <!-- Row 2: Text Right, Image Left (Reverse) -->
+        <div class="industry-row reverse">
+            <div class="industry-content">
+                <h3>Engineering <span class="gradient">Research</span></h3>
+                <p>We build research-oriented platforms that support simulation, modeling, and analytical studies across multiple engineering disciplines. From thermodynamics to control systems, our scientific tools help researchers visualize, experiment, and validate results with precision.</p>
+                <!--<a href="#" class="industry-btn">Learn More</a>-->
+            </div>
+            <div class="industry-image">
+                <div class="industry-num">02</div>
+                <img src="acherlab-images/er.png" alt="Engineering Research">
+            </div>
+        </div>
+
+        <!-- Row 3: Text Left, Image Right -->
+        <div class="industry-row">
+            <div class="industry-content">
+                <h3>Hydrocarbon <span class="gradient">Engineering</span></h3>
+                <p>Our specialized simulation technologies for hydrocarbon engineering offer detailed modeling of reservoirs, multiphase flow, and compositional analysis. These engineering tools help professionals make confident decisions in recovery planning and fluid behavior forecasting.</p>
+                <!--<a href="#" class="industry-btn">Learn More</a>-->
+            </div>
+            <div class="industry-image">
+                <div class="industry-num">03</div>
+                <img src="acherlab-images/he.png" alt="Hydrocarbon Engineering">
+            </div>
+        </div>
+
+        <!-- Row 4: Text Right, Image Left (Reverse) -->
+        <div class="industry-row reverse">
+            <div class="industry-content">
+                <h3>Simulation <span class="gradient">Technology</span></h3>
+                <p>We create advanced simulation environments that replicate engineering systems digitally - enabling engineers to test, validate, and optimize designs before physical deployment. Our virtual modeling platforms cover everything from unit operations to plant-wide dynamics.</p>
+                <!--<a href="#" class="industry-btn">Learn More</a>-->
+            </div>
+            <div class="industry-image">
+                <div class="industry-num">04</div>
+                <img src="acherlab-images/st.png" alt="Simulation Technology">
+            </div>
+        </div>
+
+        <!-- Row 5: Text Left, Image Right -->
+        <div class="industry-row">
+            <div class="industry-content">
+                <h3>Chemical Process <span class="gradient">Engineering</span></h3>
+                <p>We offer intelligent process engineering platforms designed for tasks such as equipment sizing, energy integration, and process optimization. Our calculation engines help chemical engineers design efficient, safe, and sustainable systems.</p>
+                <!--<a href="#" class="industry-btn">Learn More</a>-->
+            </div>
+            <div class="industry-image">
+                <div class="industry-num">05</div>
+                <img src="acherlab-images/cpe.png" alt="Chemical Process Engineering">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="icon">🎯</div>
+                <h3>Precision</h3>
+                <p>Accurate simulation models that deliver reliable results for critical operations</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">⚡</div>
+                <h3>Performance</h3>
+                <p>High-speed computations and real-time analysis for efficient workflows</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">🔧</div>
+                <h3>Customization</h3>
+                <p>Tailored solutions designed to meet your specific industry requirements</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo-section">
+                        <span class="logo-name" style="font-size: 20px;">AChERLABs</span>
+                    </a>
+                    <p>Next Generation Simulators for the Oil & Gas, Chemical, and Engineering Industries.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="software.html">Pipingleb</a></li>
+                        <!--<li><a href="software.html">Features</a></li>
+                        <li><a href="contact.html">Pricing</a></li>
+                        <li><a href="#">Updates</a></li>-->
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <!--<li><a href="#">Careers</a></li>
+                        <li><a href="#">News</a></li>-->
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <!--<li><a href="#">Documentation</a></li>-->
+                        <li><a href="#">Help Center</a></li>
+                        <!--<li><a href="#">Community</a></li>
+                        <li><a href="#">Status</a></li>-->
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>® 2025 AcherLab. All rights reserved.</p>
+                <!--<div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>-->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
