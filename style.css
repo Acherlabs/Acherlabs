@@ -504,15 +504,6 @@ footer {
     position: relative;
 }
 
-.image-box {
-    position: relative;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 25px 50px rgba(0,0,0,0.1);
-    background: linear-gradient(to right, #960c0c);
-    padding: 3px;
-}
-
 .image-box img {
     width: 100%;
     height: auto;
