@@ -1927,13 +1927,13 @@ footer {
     width: 50%;
 }
 
-/* Form Container - Scroll ke liye */
+/* Form Container - Default (Desktop) */
 .download-form-container {
-    max-height: 85vh; /* Screen ki 85% height legi */
-    overflow-y: auto; /* Agar form bada hua toh scroll enable hoga */
-    -webkit-overflow-scrolling: touch; /* iPhone par smooth scroll ke liye */
+    max-height: 85vh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
     
-    /* Center karne ke liye (Optional) */
+    /* Desktop par center karne ke liye */
     position: fixed;
     top: 50%;
     left: 50%;
@@ -1944,6 +1944,26 @@ footer {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    z-index: 9999; /* Ensure form is on top */
+}
+
+/* ============================================
+   RESPONSIVE: Mobile View (Keyboard Issue Fix)
+   ============================================ */
+@media (max-width: 768px) {
+    .download-form-container {
+        /* Mobile par form ko top se start karein, center mein nahi */
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%); /* Sirf horizontal center */
+        
+        /* Height adjust karein taaki scroll ho sake */
+        max-height: calc(100vh - 40px); /* Screen height minus 40px gap */
+        bottom: 20px; /* Niche se thoda space */
+        
+        /* Smooth transition agar keyboard khule toh */
+        transition: top 0.3s ease;
+    }
 }
 /* ============================================
    8. ANIMATIONS & KEYFRAMES
