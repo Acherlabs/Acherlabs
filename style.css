@@ -297,7 +297,7 @@ footer {
 
 /* Trademark (TM) Symbol - Size Chota Karne ke liye */
 .tm-icon {
-    font-size: 0.2em; /* Normal text se 40% size */
+    font-size: 0.8em; /* Normal text se 40% size */
     vertical-align: super; /* Upar align karega */
     margin-left: 2px;
 }
