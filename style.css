@@ -256,16 +256,24 @@ footer {
     color: #ffffff; /* Hover karne par white ho jayenge */
 }
 
-.footer-bottom {
+..footer-bottom {
     padding-top: 32px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Border light kiya */
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end; /* Desktop par Right side */
     align-items: center;
     flex-wrap: wrap;
     gap: 16px;
 }
 
+/* Responsive Fix: Mobile par Center karega */
+@media (max-width: 768px) {
+    .footer-bottom {
+        justify-content: center; /* Mobile par center aa jayega */
+        text-align: center;
+        width: 100%;
+    }
+}
 .footer-bottom p {
     color: #777777; /* Copyright text grey */
     font-size: 14px;
