@@ -194,41 +194,79 @@ function initDownloadModal() {
     });
 }
 
+// Jab page load ho jaye tab ye code chalega
 document.addEventListener('DOMContentLoaded', function() {
-    // 1. Mobile Input Validation
+    
+    // --- 1. Mobile Number Validation (Sirf Numbers Allow karega) ---
     const mobileInput = document.getElementById('mobile');
 
     if (mobileInput) {
-        // Keypress: Letters type hone se rokna
-        mobileInput.addEventListener('keypress', function(e) {
+        // Jab user type karega
+        mobileInput.addEventListener('keypress', function (e) {
             const charCode = (e.which) ? e.which : e.keyCode;
+            // Agar 0-9 ke alawa kuch hai toh roko
             if (charCode > 31 && (charCode < 48 || charCode > 57)) {
                 e.preventDefault();
+                return false;
             }
         });
 
-        // Input: Paste/Autofill clean karna
-        mobileInput.addEventListener('input', function() {
+        // Jab user paste kare ya autocomplete ho (Safety check)
+        mobileInput.addEventListener('input', function () {
+            // Jo bhi number nahi hai usko khaali string se replace do
             this.value = this.value.replace(/[^0-9]/g, '');
         });
     }
 
-    // 2. Form Submit Validation (Final Check)
+    // --- 2. Form Submit Validation (Final Check) ---
     const form = document.getElementById('downloadForm');
-    
+
     if (form) {
-        form.addEventListener('submit', function(e) {
+        form.addEventListener('submit', function (e) {
+            e.preventDefault(); // Pehle form rokho
+
             const mobileValue = mobileInput.value;
-            
-            // Check if empty or contains letters
-            if (!/^\d+$/.test(mobileValue) || mobileValue.length < 5) {
-                e.preventDefault(); // Stop form submission
-                alert("Please enter a valid Mobile Number (Numbers only).");
+            const nameValue = document.querySelector('input[name="name"]').value;
+            const emailValue = document.querySelector('input[name="email"]').value;
+
+            // Check 1: Mobile Number khali toh nahi
+            if (!mobileValue) {
+                alert("Please enter a mobile number.");
+                return;
             }
+
+            // Check 2: Mobile mein sirf numbers hain ya nahi
+            if (!/^\d+$/.test(mobileValue)) {
+                alert("Mobile number should contain only digits (0-9).");
+                return;
+            }
+
+            // Check 3: Minimum length (Optional: Agar 5 digit se chhota hai toh error)
+            if (mobileValue.length < 5) {
+                alert("Please enter a valid mobile number.");
+                return;
+            }
+
+            // --- AGAR SAB SAHI HAI TOH YAHAN SE DATA BHEJO ---
+            // Agar aap Google Sheet ka use kar rahe hain, toh yahan apna fetch ya submit logic aayega.
+            // Example: 
+            // fetch('YOUR_GOOGLE_SCRIPT_URL', { method: 'POST', body: new FormData(form) })
+            
+            alert("Form submitted successfully!");
+            form.submit(); // Ya phir download link trigger karein
         });
     }
-});
 
+    // --- 3. Country Code Function (Agar aapke paas purana code hai) ---
+    // Agar aapne 'updateCountryCode' function alag se likha rakha hai, 
+    // toh use yahan define karein ya ye section ignore karein.
+    /*
+    window.updateCountryCode = function() {
+        // Aapka purana logic yahan aayega
+    };
+    */
+
+});
 // ============================================
 // Initialize Everything
 // ============================================
