@@ -194,6 +194,23 @@ function initDownloadModal() {
     });
 }
 
+// Jab page load ho jaye tab ye code chalega
+document.addEventListener('DOMContentLoaded', function() {
+    
+    // Pehle input field ko uski ID se pakdein
+    // Agar aapki ID 'mobile' hai toh ye kaam karega
+    const mobileInput = document.getElementById('mobile');
+
+    // Agar input field page par mil gaya hai
+    if (mobileInput) {
+        mobileInput.addEventListener('input', function (e) {
+            // Ye value check karegi ki koi character number nahi hai toh use khatam kar dega
+            // isse koi bhi alphabet type nahi hoga, sirf numbers (0-9) allowed honge
+            this.value = this.value.replace(/[^0-9]/g, '');
+        });
+    }
+});
+
 // ============================================
 // Initialize Everything
 // ============================================
