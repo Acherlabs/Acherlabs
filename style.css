@@ -287,6 +287,13 @@ footer {
     color: #ffffff; /* Hover par white */
 }
 
+/* Footer Logo Name Styling */
+.footer-brand .logo-name {
+    font-size: 20px;
+    color: #ffffff; /* White color */
+    font-weight: bold; /* Optional: Name thoda bold karne ke liye */
+}
+
 /* Copyright (C) Symbol - Size Bada Karne ke liye */
 .copyright-icon {
     font-size: 0.9em; /* size */
