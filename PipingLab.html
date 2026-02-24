@@ -268,17 +268,21 @@
                 <input type="text" name="name" placeholder="Your Name.." required />
                 <input type="text" name="company" placeholder="Company" />
                 <input type="email" name="email" placeholder="Email" required />
-                <select name="country" id="countrySelect" required onchange="updateCountryCode()">
-                    <option value="">Select Country</option>
-                </select>
+    
+            <select name="country" id="countrySelect" required onchange="updateCountryCode()">
+                <option value="">Select Country</option>
+             </select>
 
-                <div class="form-row">
-                    <input type="text" name="country_code" id="country_code" placeholder="Code" required />
-                    <input type="text" name="mobile" placeholder="Mobile Number" required />
-                </div>
+             <div class="form-row">
+             <!-- Country Code (Readonly kiya hai taaki user bas dropdown se select kare) -->
+             <input type="text" name="country_code" id="country_code" placeholder="Code" required readonly />
+        
+             <!-- Mobile Number: ID aur Validation add ki gayi hai -->
+             <input type="tel" id="mobile" name="mobile" inputmode="numeric" pattern="[0-9]*" placeholder="Mobile Number" required />
+             </div>
 
-                <button type="submit" class="modal-btn">Submit & Download</button>
-            </form>
+             <button type="submit" class="modal-btn">Submit & Download</button>
+             </form>
         </div>
     </div>
 
@@ -303,3 +307,4 @@
 </body>
 
 </html>
+
