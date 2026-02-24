@@ -201,6 +201,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const mobileInput = document.getElementById('mobile');
 
     if (mobileInput) {
+        
+        // === UPDATE: Keyboard khulte hi form ko upar lane ke liye ===
+        mobileInput.addEventListener('focus', function() {
+            setTimeout(function() {
+                // Ye line input field ko screen ke beech mein la dega
+                mobileInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }, 300); // 300ms delay taaki keyboard poori tarah khul jaye
+        });
+
         // Jab user type karega
         mobileInput.addEventListener('keypress', function (e) {
             const charCode = (e.which) ? e.which : e.keyCode;
@@ -253,9 +262,11 @@ document.addEventListener('DOMContentLoaded', function() {
             // fetch('YOUR_GOOGLE_SCRIPT_URL', { method: 'POST', body: new FormData(form) })
             
             alert("Form submitted successfully!");
-            form.submit(); // Ya phir download link trigger karein
+            // form.submit(); // Ya phir download link trigger karein
         });
     }
+
+});
 
     // --- 3. Country Code Function (Agar aapke paas purana code hai) ---
     // Agar aapne 'updateCountryCode' function alag se likha rakha hai, 
