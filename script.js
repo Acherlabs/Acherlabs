@@ -194,19 +194,37 @@ function initDownloadModal() {
     });
 }
 
-// Jab page load ho jaye tab ye code chalega
 document.addEventListener('DOMContentLoaded', function() {
-    
-    // Pehle input field ko uski ID se pakdein
-    // Agar aapki ID 'mobile' hai toh ye kaam karega
+    // 1. Mobile Input Validation
     const mobileInput = document.getElementById('mobile');
 
-    // Agar input field page par mil gaya hai
     if (mobileInput) {
-        mobileInput.addEventListener('input', function (e) {
-            // Ye value check karegi ki koi character number nahi hai toh use khatam kar dega
-            // isse koi bhi alphabet type nahi hoga, sirf numbers (0-9) allowed honge
+        // Keypress: Letters type hone se rokna
+        mobileInput.addEventListener('keypress', function(e) {
+            const charCode = (e.which) ? e.which : e.keyCode;
+            if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+                e.preventDefault();
+            }
+        });
+
+        // Input: Paste/Autofill clean karna
+        mobileInput.addEventListener('input', function() {
             this.value = this.value.replace(/[^0-9]/g, '');
+        });
+    }
+
+    // 2. Form Submit Validation (Final Check)
+    const form = document.getElementById('downloadForm');
+    
+    if (form) {
+        form.addEventListener('submit', function(e) {
+            const mobileValue = mobileInput.value;
+            
+            // Check if empty or contains letters
+            if (!/^\d+$/.test(mobileValue) || mobileValue.length < 5) {
+                e.preventDefault(); // Stop form submission
+                alert("Please enter a valid Mobile Number (Numbers only).");
+            }
         });
     }
 });
