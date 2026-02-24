@@ -289,7 +289,7 @@ footer {
 
 /* Copyright (C) Symbol - Size Bada Karne ke liye */
 .copyright-icon {
-    font-size: 1.4em; /* Normal text se 40% bada */
+    font-size: 1.2em; /* size */
     font-weight: bold;
     display: inline-block;
     margin-right: 4px;
@@ -297,7 +297,7 @@ footer {
 
 /* Trademark (TM) Symbol - Size Chota Karne ke liye */
 .tm-icon {
-    font-size: 0.8em; /* Normal text se 40% size */
+    font-size: 0.6em; /* size */
     vertical-align: super; /* Upar align karega */
     margin-left: 2px;
 }
