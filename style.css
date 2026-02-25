@@ -204,10 +204,10 @@ nav.scrolled {
 
 /* C. Footer */
 footer {
-    background: #000000;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background: #000000; /* Background color black kar diya */
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Border thoda light kiya black ke liye */
     padding: 48px 16px;
-    color: #777777;
+    color: #777777; /* Default text color grey kar diya */
 }
 
 .footer-container {
@@ -227,12 +227,12 @@ footer {
 }
 
 .footer-brand p {
-    color: #777777;
+    color: #777777; /* Description text grey */
     font-size: 14px;
 }
 
 .footer-col h4 {
-    color: #ffffff;
+    color: #ffffff; /* Headings white rakhi hain taaki dikhe */
     font-weight: 600;
     margin-bottom: 16px;
 }
@@ -246,26 +246,26 @@ footer {
 }
 
 .footer-col a {
-    color: #777777;
+    color: #777777; /* Links ko grey kiya as per request */
     font-size: 14px;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer-col a:hover {
-    color: #ffffff;
+    color: #ffffff; /* Hover karne par white ho jayenge */
 }
 
-/* Fixed Double Dot Error */
-.footer-bottom {
+..footer-bottom {
     padding-top: 32px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end; /* Desktop par Right side */
     align-items: center;
     flex-wrap: wrap;
     gap: 16px;
 }
+
 /* Responsive Fix: Mobile par Center karega */
 @media (max-width: 768px) {
     .footer-bottom {
@@ -275,7 +275,7 @@ footer {
     }
 }
 .footer-bottom p {
-    color: #777777;
+    color: #777777; /* Copyright text grey */
     font-size: 14px;
 }
 
@@ -285,35 +285,35 @@ footer {
 }
 
 .footer-links a {
-    color: #777777;
+    color: #777777; /* Footer bottom links grey */
     font-size: 14px;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
-    color: #ffffff;
+    color: #ffffff; /* Hover par white */
 }
 
 /* Footer Logo Name Styling */
 .footer-brand .logo-name {
     font-size: 20px;
-    color: #ffffff;
-    font-weight: bold;
+    color: #ffffff; /* White color */
+    font-weight: bold; /* Optional: Name thoda bold karne ke liye */
 }
 
-/* Copyright (C) Symbol */
+/* Copyright (C) Symbol - Size Bada Karne ke liye */
 .copyright-icon {
-    font-size: 0.9em;
+    font-size: 0.9em; /* size */
     font-weight: bold;
     display: inline-block;
     margin-right: 4px;
 }
 
-/* Trademark (TM) Symbol */
+/* Trademark (TM) Symbol - Size Chota Karne ke liye */
 .tm-icon {
-    font-size: 0.5em;
-    vertical-align: super;
+    font-size: 0.5em; /* size */
+    vertical-align: super; /* Upar align karega */
     margin-left: 2px;
 }
 
