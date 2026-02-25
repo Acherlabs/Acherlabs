@@ -1302,7 +1302,7 @@ footer {
 
 .cap-header h2 {
     font-size: 3rem;
-    color: #0f172a;
+    color: #777777;
     font-weight: 800;
 }
 
@@ -1344,7 +1344,7 @@ footer {
 
 .cap-title {
     font-size: 1.5rem;
-    color: #0f172a;
+    color: #000000;
     margin-bottom: 15px;
     font-weight: 700;
     display: flex;
@@ -1386,7 +1386,7 @@ footer {
 
 .section-header h2 {
     font-size: 2.8rem;
-    color: #0f172a;
+    color: #777777;
     font-weight: 800;
 }
 
@@ -1506,7 +1506,7 @@ footer {
 .big-text {
     font-size: 3rem;
     font-weight: 800;
-    color: #0f172a;
+    color: #777777;
     line-height: 1.1;
     margin-bottom: 20px;
 }
