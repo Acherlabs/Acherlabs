@@ -592,6 +592,7 @@ footer {
     flex-wrap: wrap;
 }
 
+/* Desktop Reverse Layout: Text Left, Image Right */
 .industry-row.reverse {
     flex-direction: row-reverse;
 }
@@ -674,6 +675,35 @@ footer {
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
+/* --- RESPONSIVE STYLES (Mobile View) --- */
+@media (max-width: 768px) {
+    /* Mobile par sabse pehle Image, uske baad Text */
+    .industry-row, 
+    .industry-row.reverse {
+        flex-direction: column !important;
+        text-align: center;
+    }
+
+    /* Number tab center karein jab image ke upar ho */
+    .industry-num {
+        top: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .industry-content h3 {
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }
+
+    /* Button Center Fix */
+    .industry-btn {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
 /* C. Features Section */
 .features {
     padding: 80px 16px;
