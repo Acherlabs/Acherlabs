@@ -266,7 +266,14 @@ footer {
     flex-wrap: wrap;
     gap: 16px;
 }
-
+/* Responsive Fix: Mobile par Center karega */
+@media (max-width: 768px) {
+    .footer-bottom {
+        justify-content: center; /* Mobile par center aa jayega */
+        text-align: center;
+        width: 100%;
+    }
+}
 .footer-bottom p {
     color: #777777;
     font-size: 14px;
