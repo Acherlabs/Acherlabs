@@ -856,7 +856,10 @@ footer {
     border-radius: 24px;
 }
 
-/* Core Values Section */
+/* ============================================
+   Core Values Section (Updated)
+   ============================================ */
+
 .core-values-section {
     padding: 60px 20px;
     border-top: 1px solid #e2e8f0;
@@ -883,29 +886,10 @@ footer {
     line-height: 1.7;
 }
 
-/* Mobile & Tablet View (768px se chhoti screen) */
-@media (max-width: 768px) {
-    .values-grid {
-        grid-template-columns: 1fr; /* Ek line mein ek hi value aayegi */
-    }
-
-    .core-values-section {
-        padding: 40px 15px;
-    }
-
-    .cv-header h2 {
-        font-size: 1.75rem;
-    }
-    
-    .value-card {
-        padding: 15px;
-    }
-}
-
-/* Desktop View: 4 Columns */
+/* Desktop View: 4 Columns (Default) */
 .values-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr); 
     gap: 20px;
 }
 
@@ -954,6 +938,36 @@ footer {
     font-size: 0.9rem;
     color: #000000;
     line-height: 1.6;
+}
+
+/* --- RESPONSIVE CODE (Yahan update kiya gaya hai) --- */
+
+/* Tablet View (Jab screen 1024px se chhoti ho) */
+/* Yahan par 2 columns banenge */
+@media (max-width: 1024px) {
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+/* Mobile View (Jab screen 768px se chhoti ho) */
+/* Yahan par 1 column banega */
+@media (max-width: 768px) {
+    .values-grid {
+        grid-template-columns: 1fr; /* Sirf 1 column (Ek ke neeche ek) */
+    }
+
+    .core-values-section {
+        padding: 40px 15px;
+    }
+
+    .cv-header h2 {
+        font-size: 1.75rem;
+    }
+    
+    .value-card {
+        padding: 15px;
+    }
 }
 
 /* Why Choose */
