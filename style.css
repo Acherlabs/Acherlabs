@@ -260,7 +260,6 @@ footer {
     padding-top: 32px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     display: flex;
-    justify-content: flex-end; /* Desktop par Right side */
     align-items: center;
     flex-wrap: wrap;
     gap: 16px;
