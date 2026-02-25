@@ -145,7 +145,7 @@ nav.scrolled {
 .nav-btn.active {
     background: #960c0c;
     color: #fff;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Changed to Black */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .mobile-menu-btn {
@@ -173,7 +173,7 @@ nav.scrolled {
     font-weight: 600;
     border: none;
     cursor: pointer;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Changed to Black */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
     text-decoration: none;
     display: inline-block;
@@ -181,7 +181,7 @@ nav.scrolled {
 
 .btn-primary:hover {
     transform: scale(1.05);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Changed to Black */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
 
 .btn-secondary {
@@ -204,10 +204,10 @@ nav.scrolled {
 
 /* C. Footer */
 footer {
-    background: #000000; /* Background color black kar diya */
-    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Border thoda light kiya black ke liye */
+    background: #000000;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding: 48px 16px;
-    color: #777777; /* Default text color grey kar diya */
+    color: #777777;
 }
 
 .footer-container {
@@ -227,12 +227,12 @@ footer {
 }
 
 .footer-brand p {
-    color: #777777; /* Description text grey */
+    color: #777777;
     font-size: 14px;
 }
 
 .footer-col h4 {
-    color: #ffffff; /* Headings white rakhi hain taaki dikhe */
+    color: #ffffff;
     font-weight: 600;
     margin-bottom: 16px;
 }
@@ -246,36 +246,29 @@ footer {
 }
 
 .footer-col a {
-    color: #777777; /* Links ko grey kiya as per request */
+    color: #777777;
     font-size: 14px;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer-col a:hover {
-    color: #ffffff; /* Hover karne par white ho jayenge */
+    color: #ffffff;
 }
 
-..footer-bottom {
+/* Fixed Double Dot Error */
+.footer-bottom {
     padding-top: 32px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     display: flex;
-    justify-content: flex-end; /* Desktop par Right side */
+    justify-content: flex-end;
     align-items: center;
     flex-wrap: wrap;
     gap: 16px;
 }
 
-/* Responsive Fix: Mobile par Center karega */
-@media (max-width: 768px) {
-    .footer-bottom {
-        justify-content: center; /* Mobile par center aa jayega */
-        text-align: center;
-        width: 100%;
-    }
-}
 .footer-bottom p {
-    color: #777777; /* Copyright text grey */
+    color: #777777;
     font-size: 14px;
 }
 
@@ -285,35 +278,35 @@ footer {
 }
 
 .footer-links a {
-    color: #777777; /* Footer bottom links grey */
+    color: #777777;
     font-size: 14px;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
-    color: #ffffff; /* Hover par white */
+    color: #ffffff;
 }
 
 /* Footer Logo Name Styling */
 .footer-brand .logo-name {
     font-size: 20px;
-    color: #ffffff; /* White color */
-    font-weight: bold; /* Optional: Name thoda bold karne ke liye */
+    color: #ffffff;
+    font-weight: bold;
 }
 
-/* Copyright (C) Symbol - Size Bada Karne ke liye */
+/* Copyright (C) Symbol */
 .copyright-icon {
-    font-size: 0.9em; /* size */
+    font-size: 0.9em;
     font-weight: bold;
     display: inline-block;
     margin-right: 4px;
 }
 
-/* Trademark (TM) Symbol - Size Chota Karne ke liye */
+/* Trademark (TM) Symbol */
 .tm-icon {
-    font-size: 0.5em; /* size */
-    vertical-align: super; /* Upar align karega */
+    font-size: 0.5em;
+    vertical-align: super;
     margin-left: 2px;
 }
 
@@ -370,12 +363,12 @@ footer {
     cursor: pointer;
     margin-top: 10px;
     transition: all 0.3s ease;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Changed to Black */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .modal-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25); /* Changed to Black */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
 }
 
 /* ============================================
@@ -636,7 +629,7 @@ footer {
 
 .industry-btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Changed to Black */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .industry-image {
@@ -673,22 +666,6 @@ footer {
     font-weight: bold;
     color: #fff;
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
-
-@media (max-width: 768px) {
-    .industry-row, .industry-row.reverse {
-        flex-direction: column;
-        text-align: center;
-    }
-    .industry-num {
-        top: -10px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .industry-content h3 {
-        font-size: 1.5rem;
-        margin-top: 20px;
-    }
 }
 
 /* C. Features Section */
@@ -960,27 +937,6 @@ footer {
     line-height: 1.6;
 }
 
-/* --- RESPONSIVE CODE --- */
-
-/* Mobile & Tablet View (768px se chhoti screen) */
-@media (max-width: 768px) {
-    .values-grid {
-        grid-template-columns: 1fr; /* Ek line mein ek hi value aayegi */
-    }
-
-    .core-values-section {
-        padding: 40px 15px;
-    }
-
-    .cv-header h2 {
-        font-size: 1.75rem;
-    }
-    
-    .value-card {
-        padding: 15px;
-    }
-}
-
 /* Why Choose */
 .mission-card {
     position: absolute;
@@ -990,7 +946,7 @@ footer {
     border-radius: 16px;
     background: linear-gradient(to bottom right, #960c0c);
     max-width: 280px;
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15); /* Changed to Black */
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
 }
 
 .mission-card h4 {
@@ -1905,7 +1861,7 @@ footer {
     border-color: #3b82f6;
 }
 
-"/* ============================================
+/* ============================================
    7. FORMS & DOWNLOAD STYLES
    ============================================ */
 
@@ -1966,6 +1922,7 @@ footer {
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
 }
+
 /* ============================================
    8. ANIMATIONS & KEYFRAMES
    ============================================ */
@@ -2014,6 +1971,14 @@ footer {
         color: #0f172a;
     }
 
+    /* Button Center Fix */
+    .btn, .btn-primary, .btn-secondary, .nav-btn, .industry-btn, .modal-btn, button {
+        text-align: center !important;
+        justify-content: center !important;
+        display: inline-flex; /* Flex ensures perfect centering */
+        align-items: center;
+    }
+
     /* Hero Adjustments */
     .hero h1 {
         font-size: 2rem;
@@ -2060,6 +2025,23 @@ footer {
         gap: 40px;
     }
 
+    /* FIX: Industries Image First, Text Second on Mobile */
+    /* Since HTML is Text -> Image, we use column-reverse to show Image -> Text */
+    .industry-row, .industry-row.reverse {
+        flex-direction: column-reverse !important; 
+        text-align: center;
+    }
+    
+    .industry-num {
+        top: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .industry-content h3 {
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }
+
     /* Specific Layout Fixes */
     .pipingleb-content {
         grid-template-columns: 1fr;
@@ -2079,6 +2061,7 @@ footer {
     .footer-bottom {
         flex-direction: column;
         text-align: center;
+        justify-content: center; /* Center content on mobile */
     }
 
     /* Modal Mobile Fix */
