@@ -883,6 +883,25 @@ footer {
     line-height: 1.7;
 }
 
+/* Mobile & Tablet View (768px se chhoti screen) */
+@media (max-width: 768px) {
+    .values-grid {
+        grid-template-columns: 1fr; /* Ek line mein ek hi value aayegi */
+    }
+
+    .core-values-section {
+        padding: 40px 15px;
+    }
+
+    .cv-header h2 {
+        font-size: 1.75rem;
+    }
+    
+    .value-card {
+        padding: 15px;
+    }
+}
+
 /* Desktop View: 4 Columns */
 .values-grid {
     display: grid;
