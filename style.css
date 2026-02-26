@@ -10,7 +10,7 @@
    2. REUSABLE COMPONENTS
    3. PAGE: HOME
    4. PAGE: ABOUT
-   5. PAGE: SOFTWARE
+   5. PAGE: LABS
    6. PAGE: CONTACT
    7. FORMS & DOWNLOAD STYLES
    8. ANIMATIONS & KEYFRAMES
@@ -1159,16 +1159,16 @@ footer {
 }
 
 /* ============================================
-   5. PAGE: SOFTWARE
+   5. PAGE: LABS
    ============================================ */
 
-.software-page {
+.LABS-page {
     padding-top: 96px;
     background: #f8fafc;
     min-height: 100vh;
 }
 
-.software-container {
+.LABS-container {
     max-width: 1280px;
     margin: 0 auto;
     padding: 64px 16px;
@@ -1645,14 +1645,14 @@ footer {
     background-clip: text;
 }
 
-.software-features-grid {
+.LABS-features-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     margin-bottom: 80px;
 }
 
-.software-feature {
+.LABS-feature {
     padding: 24px;
     border-radius: 16px;
     background: #ffffff;
@@ -1660,13 +1660,13 @@ footer {
     transition: all 0.3s ease;
 }
 
-.software-feature:hover {
+.LABS-feature:hover {
     border-color: #3b82f6;
     transform: translateY(-4px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.05);
 }
 
-.software-feature .num {
+.LABS-feature .num {
     width: 40px;
     height: 40px;
     border-radius: 8px;
@@ -1680,18 +1680,18 @@ footer {
     transition: transform 0.3s ease;
 }
 
-.software-feature:hover .num {
+.LABS-feature:hover .num {
     transform: scale(1.1);
 }
 
-.software-feature h3 {
+.LABS-feature h3 {
     font-size: 18px;
     font-weight: 600;
     color: #0f172a;
     margin-bottom: 8px;
 }
 
-.software-feature p {
+.LABS-feature p {
     color: #000000;
     font-size: 14px;
     line-height: 1.6;
@@ -2086,7 +2086,7 @@ footer {
     .why-grid {
         grid-template-columns: 1fr;
     }
-    .software-features-grid {
+    .LABS-features-grid {
         grid-template-columns: 1fr;
     }
     .contact-grid {
