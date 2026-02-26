@@ -115,7 +115,8 @@ nav.scrolled {
     font-size: 10px;
     color: #777777;
     letter-spacing: 2px;
-    font-family: "Segoe UI", sans-serif;
+    font-family: "Segoe UI Semibold", "Segoe UI", sans-serif;
+    font-weight: 600; /* Semibold effect ke liye ye bhi add karna achha rehta hai */
 }
 
 .nav-links {
