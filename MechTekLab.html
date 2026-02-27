@@ -272,7 +272,18 @@
         
         <form id="downloadForm">
             <input type="text" name="name" placeholder="Enter Your Name.." required />
-            <input type="text" name="company" placeholder="Enter Your Company" />
+            
+            <!-- FIX: Name "company" rakha hai taaki script kaam kare, par Label "I am a..." hai -->
+            <select name="company" required>
+                <option value="" disabled selected>I am a... (Select Role)</option>
+                <option value="Student">Student</option>
+                <option value="Individual Professional">Individual Professional / Freelancer</option>
+                <option value="Corporate Employee">Corporate Employee</option>
+                <option value="Researcher / Academic">Researcher / Academic</option>
+                <option value="Job Seeker">Job Seeker / Learner</option>
+                <option value="Other">Other</option>
+            </select>
+
             <input type="email" name="email" placeholder="Enter your email" required />
 
             <select name="country" id="countrySelect" required>
@@ -338,5 +349,6 @@
 </body>
 
 </html>
+
 
 
