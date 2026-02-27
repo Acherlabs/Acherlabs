@@ -807,7 +807,7 @@ footer {
 .about-container {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 40px 16px;
+    padding: 96px 16px;
 }
 
 .about-grid {
@@ -1213,7 +1213,7 @@ footer {
 .Labs-container {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 40px 16px;
+    padding: 96px 16px;
 }
 
 /* A. PipingLab Hero Section */
@@ -1776,6 +1776,7 @@ footer {
 .contact-container {
     max-width: 1280px;
     margin: 0 auto;
+    padding: 96px 16px;
 }
 
 .contact-grid {
@@ -2260,3 +2261,4 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
