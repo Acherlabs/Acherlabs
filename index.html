@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AChERLABs - Engineering Intelligence</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Labs.css"> <!-- Labs page ke liye ye zaroori hai -->
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- ============================================
+         NAVIGATION (Updated for Single Page)
+         ============================================ -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <!-- Logo (Click karne par top par jayega) -->
+            <a href="#home" class="logo-section">
+                <div class="logo-text">
+                    <span class="logo-name">AChERLABs</span>
+                    <span class="logo-tagline">Engineering Intelligence</span>
+                </div>
+            </a>
+            
+            <!-- Navigation Links (Ab href mein IDs hain) -->
+            <div class="nav-links">
+                <a href="#home" class="nav-btn active">Home</a>
+                <a href="#about" class="nav-btn">About</a>
+                <a href="#labs" class="nav-btn">Labs</a>
+                <a href="#contact" class="nav-btn">Contact</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ============================================
+         SECTION 1: HOME
+         ============================================ -->
+    <section id="home" class="hero">
+    
+        <!-- 1. Slider Area -->
+        <div class="hero-bg-slider">
+            <div class="slide active" style="background-image: url('acherlab-images/beg-0.png');"></div>
+            <div class="slide" style="background-image: url('acherlab-images/beg-1.png');"></div>
+            <div class="slide" style="background-image: url('acherlab-images/beg-2.png');"></div>
+            <div class="slide" style="background-image: url('acherlab-images/beg-3.png');"></div>
+            <div class="slide" style="background-image: url('acherlab-images/beg-4.png');"></div>
+        
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <svg width="24" height="24" fill="none" stroke="rgba(255,255,255,0.6)" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Hero Bottom Section: Text Left + Image Right -->
+        <div class="hero-bottom-wrapper">
+            <div class="hero-left-col">
+                <div class="hero-content">
+                    <h1><span class="gradient">AChERLABs</span></h1>
+                    <p>We lead the way in next-generation simulation software for oil & gas, chemical processing, and engineering research. Our advanced platforms model and optimize complex hydrocarbon and process systems with high accuracy, enabling data-driven decisions that improve safety, efficiency, and operational performance - from upstream reservoir modeling to downstream refining.
+                    <br><br>
+                    By combining deep engineering expertise with cutting-edge computational science, we deliver powerful tools for predictive analysis, process optimization, and mission-critical decision support. Our technology empowers industries to operate smarter in an evolving energy landscape.
+                    <br><br>
+                    <strong><span class="italic-text">"Engineering intelligence through simulation and science."</span></strong>
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <!-- Labs section par jane ke liye #labs use kiya hai -->
+                        <a href="#labs" class="btn-primary">Explore</a>
+                        <!-- Contact section par jane ke liye #contact use kiya hai -->
+                        <a href="#contact" class="btn-secondary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-right-col">
+                <div class="image-box">
+            <!-- Yahan aapki image hai -->
+            <img src="acherlab-images/computer-frame.png" alt="Computer" class="frame-image"></div>
+            <!-- Ye corner colors ke liye hain -->
+            <span class="corner-dot top-left"></span>
+            <span class="corner-dot bottom-right"></span>
+                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Section (Home ka part) -->
+    <section class="industries" id="industries">
+        <div class="section-title">
+            <h2>Our <span class="gradient">Industries</span></h2>
+            <p><span class="italic-text">"We provide expert solutions across various engineering domains"</span></p>
+        </div>
+
+        <div class="industries-container">
+            <!-- Row 1 -->
+            <div class="industry-row">
+                <div class="industry-image">
+                    <div class="industry-num">01</div>
+                    <img src="acherlab-images/oil.png" alt="Oil and Gas Industry">
+                </div>
+                <div class="industry-content">
+                    <h3>Oil and Gas <span class="gradient">Industry</span></h3>
+                    <p>I develop specialized digital solutions for the oil and gas sector, focused on enhancing production efficiency, refining operations, and field analysis. Our technology platforms are designed to support engineers in simulating complex workflows, optimizing resources, and minimizing risks in both upstream and downstream environments.</p>
+                </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="industry-row reverse">
+                <div class="industry-image">
+                    <div class="industry-num">02</div>
+                    <img src="acherlab-images/er.png" alt="Engineering Research">
+                </div>
+                <div class="industry-content">
+                    <h3>Engineering <span class="gradient">Research</span></h3>
+                    <p>We build research-oriented platforms that support simulation, modeling, and analytical studies across multiple engineering disciplines. From thermodynamics to control systems, our scientific tools help researchers visualize, experiment, and validate results with precision.</p>
+                </div>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="industry-row">
+                <div class="industry-image">
+                    <div class="industry-num">03</div>
+                    <img src="acherlab-images/he.png" alt="Hydrocarbon Engineering">
+                </div>
+                <div class="industry-content">
+                    <h3>Petrochemical <span class="gradient">Industry</span></h3>
+                    <p>Our specialized simulation technologies for hydrocarbon engineering offer detailed modeling of reservoirs, multiphase flow, and compositional analysis. These engineering tools help professionals make confident decisions in recovery planning and fluid behavior forecasting.</p>
+                </div>
+            </div>
+
+            <!-- Row 4 -->
+            <div class="industry-row reverse">
+                <div class="industry-image">
+                    <div class="industry-num">04</div>
+                    <img src="acherlab-images/st.png" alt="Simulation Technology">
+                </div>
+                <div class="industry-content">
+                    <h3>Simulation <span class="gradient">Technology</span></h3>
+                    <p>We create advanced simulation environments that replicate engineering systems digitally - enabling engineers to test, validate, and optimize designs before physical deployment. Our virtual modeling platforms cover everything from unit operations to plant-wide dynamics.</p>
+                </div>
+            </div>
+
+            <!-- Row 5 -->
+            <div class="industry-row">
+                <div class="industry-image">
+                    <div class="industry-num">05</div>
+                    <img src="acherlab-images/cpe.png" alt="Chemical Process Engineering">
+                </div>
+                <div class="industry-content">
+                    <h3>Process & CFD <span class="gradient">Solutions</span></h3>
+                    <p>We offer intelligent process engineering platforms designed for tasks such as equipment sizing, energy integration, and process optimization. Our calculation engines help chemical engineers design efficient, safe, and sustainable systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section (Home ka part) -->
+    <section class="features">
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="icon">🎯</div>
+                <h3>Precision</h3>
+                <p>Accurate simulation models that deliver reliable results for critical operations</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">⚡</div>
+                <h3>Performance</h3>
+                <p>High-speed computations and real-time analysis for efficient workflows</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">🔧</div>
+                <h3>Customization</h3>
+                <p>Tailored solutions designed to meet your specific industry requirements</p>
+            </div>
+        </div>
+    </section>
+
+        <!-- ============================================
+         SECTION 2: ABOUT (Updated with Centered Heading)
+         ============================================ -->
+    <section id="about" class="about-page">
+        <div class="about-container">
+            
+            <!-- 1. HEADING (Labs section jaisa structure) -->
+            <div class="section-title">
+            <!-- "About" text normal hoga, "Us" gradient mein hoga -->
+            <h1 style="font-size: 3rem; margin-bottom: 10px;">
+               About <span class="gradient">Us</span>
+            </h1>
+            </div>
+
+            <!-- 2. AB YEH GRID NICHE HAI (Text Left + Image Right) -->
+            <div class="about-grid">
+                <div class="about-content">
+                    <!-- H1 Yahan se hata kar upar kar diya hai -->
+                    <h1>Engineering <span class="gradient">Intelligence</span></h1>
+                    <p class="tagline"><strong><span class="italic-text">Engineering Intelligence. Simulating the Future.</span></strong></p>
+
+                    <p>At AcherLabs, we are redefining the future of energy and process engineering through powerful simulation software and scientific precision. Our mission is to empower engineers, researchers, and energy professionals with advanced tools to design, analyze, and optimize complex systems across the oil & gas value chain.</p>
+
+                    <p>Built at the intersection of engineering research and advanced computation, our platform transforms intricate hydrocarbon and chemical processes into actionable digital insights - accelerating innovation and reducing risk in real-world industrial environments.</p>
+
+                    <p>From multiphase flow modeling to thermal simulation and plant-scale optimization, we deliver the intelligence today's energy professionals need to make smarter, faster decisions.</p>
+
+                    <div class="focus-areas">
+                        <p class="tagline"><strong>Our Focus Areas:</strong></p>
+                        <ul>
+                            <li>Oil & Gas Process Simulation</li>
+                            <li>Hydrocarbon Flow & System Modeling</li>
+                            <li>Chemical Process Optimization</li>
+                            <li>Engineering R&D and Industrial Integration</li>
+                            <li>Scalable Simulation Tools for Complex Operations</li>
+                        </ul>
+                    </div>
+                    <br><br>
+                    <p class="full-width">
+                       Whether you're simulating next-generation fuels or optimizing critical infrastructure, AcherLabs brings precision, performance, and innovation to every stage of your engineering journey.
+                    </p>
+                    <strong><span class="italic-text">Think Smart. Simulate Deep. Engineer Better - with AChERLABs.</span></strong>
+                </div>
+
+                <div class="about-image">
+                    <img src="acherlab-images/beg.png" alt="About AChERLABs">
+                    <div class="about-image-overlay"></div>
+                    <div class="mission-card">
+                        <h4>Our Mission</h4>
+                        <p>To revolutionize industrial simulation through innovation and excellence.</p>
+                    </div>
+                </div>
+            </div>                                        
+                    
+            <!-- Badges (Ab ye bhi center align hoga) -->
+            <div class="about-badges" style="justify-content: center; margin-top: 24px;">
+                <div class="badge green">
+                    <span class="badge-dot-sm"></span>
+                    ISO Certified
+                </div>
+                <div class="badge blue">
+                    <span class="badge-dot-sm"></span>
+                    24/7 Support
+                </div>
+                <div class="badge purple">
+                    <span class="badge-dot-sm"></span>
+                    Global Presence
+                </div>
+            </div>
+            
+            <!-- Core Values Section -->
+            <div class="core-values-section">
+                <div class="cv-header">
+                    <h2>Our Core Values</h2>
+                    <p>Our core values guide our decisions, shape our culture, and define how we collaborate with our clients and partners to achieve shared success.</p>
+                </div>
+
+                <div class="values-grid">
+                    <div class="value-card purple">
+                        <div class="value-icon">🛡️</div>
+                        <h3>Integrity</h3>
+                        <p>We uphold the highest ethical standards, ensuring transparency and honesty in every project and partnership we undertake.</p>
+                    </div>
+
+                    <div class="value-card blue">
+                        <div class="value-icon">💡</div>
+                        <h3>Innovation</h3>
+                        <p>We embrace new technologies and creative approaches to solve complex engineering challenges and deliver future-ready solutions.</p>
+                    </div>
+
+                    <div class="value-card green">
+                        <div class="value-icon">🤝</div>
+                        <h3>Collaboration</h3>
+                        <p>We believe in the power of teamwork, fostering strong relationships with clients to achieve common goals and mutual success.</p>
+                    </div>
+
+                    <div class="value-card orange">
+                        <div class="value-icon">🏅</div>
+                        <h3>Excellence</h3>
+                        <p>We strive for the highest quality in our deliverables, consistently going beyond standards to exceed client expectations.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Why Choose Section -->
+            <div class="why-choose">
+                <h2 class="section-title" style="margin-bottom: 48px;">Why Choose <span class="gradient">AChERLABs</span></h2>
+                <div class="why-grid">
+                    <div class="why-card">
+                        <div class="icon-box icon-cyan">🚀</div>
+                        <h3>Innovation</h3>
+                        <p>Constantly pushing boundaries with cutting-edge technology</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="icon-box icon-purple">🎓</div>
+                        <h3>Expertise</h3>
+                        <p>Deep domain knowledge in simulation and engineering</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="icon-box icon-green">🛡️</div>
+                        <h3>Reliability</h3>
+                        <p>Trusted by industry leaders worldwide</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="icon-box icon-orange">💬</div>
+                        <h3>Support</h3>
+                        <p>Dedicated team for implementation and training</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- CTA Section -->
+        <section class="cta-about-section">
+            <div class="cta-box">
+                <h2>Ready to Work With Us?</h2>
+                <p>Join the many satisfied clients who have experienced our exceptional engineering solutions.</p>
+                
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn-white-bg">Contact Us</a>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- ============================================
+         SECTION 3: LABS
+         ============================================ -->
+    <section id="labs" class="Labs-page">
+        <div class="Labs-container">
+            <div class="section-title">
+                <h2>Our <span class="gradient">Labs</span> Solutions</h2>
+                <p>Discover our range of cutting-edge simulation Software designed to transform your operations</p>
+            </div>
+            
+            <!-- PipingLab Section -->
+            <div class="pipingleb-section">
+                <div class="pipingleb-bg"></div>
+                <div class="pipingleb-glow">
+                    <div class="glow-1"></div>
+                    <div class="glow-2"></div>
+                </div>
+                
+                <div class="pipingleb-content">
+                    <div>
+                        <h2>MechTekLab</h2>
+                        <p style="font-size: 1.1rem; color: #000000; margin-bottom: 15px; font-weight: 600;">Advanced Piping Data Engineering Software</p>
+                        
+                        <p>PipingLab enhances efficiency in piping design and removes burden of searching through fragmented engineering resources. It offers intuitive access to component catalogues, weight tables, parametric shapes, and design utilities.</p>
+                        
+                        <p>Developed by Acherlabs, PipingLab has quickly established itself as a trusted resource in oil & gas, chemical, and process industries. Its piping databases and parametric models are widely used in 3D plant design environments.</p>
+                        
+                        <div class="hero-buttons" style="justify-content: flex-start;">
+                            <!-- YE LINK ALAG PAGE PAR JAYEGA (PipingLab.html) -->
+                            <a href="PipingLab.html" class="btn-primary">Explore</a>
+                        </div>
+                    </div>
+                    
+                    <div class="pipingleb-image">
+                        <img src="acherlab-images/pipe.png" alt="PipingLab">
+                        <div class="pipingleb-stats">
+                            <div class="pipingleb-stat">
+                                <div class="value cyan">99.9%</div>
+                                <div class="label">Accuracy</div>
+                            </div>
+                            <div class="pipingleb-stat">
+                                <div class="value purple">Real-time</div>
+                                <div class="label">Processing</div>
+                            </div>
+                            <div class="pipingleb-stat">
+                                <div class="value orange">24/7</div>
+                                <div class="label">Support</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 4: CONTACT
+         ============================================ -->
+    <section id="contact" class="contact-page">
+        <div class="contact-container">
+            <div class="section-title">
+                <h2>👋🏽 Your <span class="gradient">Helping Hand</span></h2>
+                <p>Have questions about our Software? Want to schedule a demo? We'd love to hear from you.</p>
+            </div>
+            
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h2>Send Us a Message</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" name="name" placeholder="Your Name" required />
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Company</label>
+                            <input type="text" name="company" placeholder="Your Company Name">
+                        </div>
+                        <div class="form-group">
+                            <label>Subject</label>
+                            <select name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="demo">Request Demo</option>
+                                <option value="pricing">Pricing Inquiry</option>
+                                <option value="support">Technical Support</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea name="message" rows="5" placeholder="Tell us about your needs..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary" style="width: 100%;">Send Message</button>
+                        <p id="responseMessage"></p>
+                    </form>
+
+                    <!-- Quick Links -->
+                    <div class="quick-links-card" style="margin-top: 30px; margin-bottom: 0;">
+                        <h2>Quick Links</h2>
+                        <div class="quick-links-grid">
+                            <button class="quick-link-btn">→ Product Demo</button>
+                            <button class="quick-link-btn">→ Documentation</button>
+                            <button class="quick-link-btn">→ Case Studies</button>
+                            <button class="quick-link-btn">→ FAQ</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="contact-image-box">
+                        <img src="acherlab-images/contact.png" alt="Contact Us Image">
+                    </div>
+                    
+                    <div class="info-card">
+                        <h2>Contact Information</h2>
+                        <div class="info-item">
+                            <div class="info-icon">📧</div>
+                            <div>
+                                <div class="label">Email</div>
+                                <div class="value">contact@acherlab.com</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-card">
+                        <h2>Follow Us</h2>
+                        <div class="social-links">
+                            <button class="social-btn">LinkedIn</button>
+                            <button class="social-btn">Twitter</button>
+                            <button class="social-btn">Facebook</button>
+                            <button class="social-btn">YouTube</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo-section">
+                        <span class="logo-name" style="font-size: 20px;">AChERLABs</span>
+                    </a>
+                    <p>Engineering Intelligence for the Oil & Gas, Chemical, and Engineering Industries.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="PipingLab.html">PipingLab</a></li>
+                        <!--<li><a href="Labs.html">Features</a></li>
+                        <li><a href="contact.html">Pricing</a></li>
+                        <li><a href="#">Updates</a></li>-->
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <!--<li><a href="#">Careers</a></li>
+                        <li><a href="#">News</a></li>-->
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <!--<li><a href="#">Documentation</a></li>-->
+                        <li><a href="#">Help Center</a></li>
+                        <!--<li><a href="#">Community</a></li>
+                        <li><a href="#">Status</a></li>-->
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>
+                   <span class="copyright-icon">&copy;</span>2025 AChERLABs<sup class="tm-icon">TM</sup>. All rights reserved.
+                </p>
+                <!--<div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>-->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
