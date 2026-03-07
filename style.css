@@ -1997,16 +1997,23 @@ footer {
     font-weight: 500;
 }
 
-/* Social Links */
+/* Social Links Container */
 .social-links {
     display: flex;
     gap: 16px;
     flex-wrap: wrap;
+    justify-content: center; /* Ye line buttons ko center mein laayegi */
+    margin-top: 15px; /* Tagline se thoda gap (optional) */
 }
 
 .social-btn {
-    flex: 1;
-    padding: 12px;
+    /* flex: 1; */ /* Isko comment karne se buttons compact ho jayengi, auto width lenge */
+    display: inline-flex; /* Icon aur text ko ek line mein rakhne ke liye */
+    align-items: center; /* Vertically center */
+    justify-content: center; /* Horizontally center */
+    gap: 8px; /* Icon aur text ke beech gap */
+    
+    padding: 10px 20px; /* Thoda comfortable padding */
     border-radius: 12px;
     background: #f8fafc;
     border: 1px solid #e2e8f0;
@@ -2014,12 +2021,36 @@ footer {
     font-size: 14px;
     font-weight: 500;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: all 0.3s ease; /* All properties transition */
+    text-decoration: none; /* Agar a tag use kar rahe ho to underline hatane ke liye */
 }
 
+/* Default Hover (Light grey) */
 .social-btn:hover {
-    background: #eff6ff;
-    border-color: #3b82f6;
+    background: #f1f5f9;
+    border-color: #cbd5e1;
+    transform: translateY(-2px); /* Thoda sa upar aane ka effect */
+}
+
+/* --- Specific Styles for LinkedIn Button --- */
+.social-btn.linkedin:hover {
+    background: #0077b5; /* LinkedIn Blue */
+    border-color: #0077b5;
+    color: #fff;
+}
+
+/* --- Specific Styles for YouTube Button --- */
+.social-btn.youtube:hover {
+    background: #FF0000; /* YouTube Red */
+    border-color: #FF0000;
+    color: #fff;
+}
+
+/* Icon styling (SVGs ke liye) */
+.social-btn svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor; /* Ye color parent (button) ke color ko follow karega */
 }
 
 /* ============================================
@@ -2264,5 +2295,6 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
