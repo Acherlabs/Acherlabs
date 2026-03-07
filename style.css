@@ -124,11 +124,14 @@ nav.scrolled {
 }
 
 .logo-tagline {
-    font-size: 9px;
+    font-size: 7px;
     color: #777777;
     letter-spacing: 2px;
     font-family: "Segoe UI Semibold", "Segoe UI", sans-serif;
     font-weight: 600; /* Semibold effect ke liye ye bhi add karna achha rehta hai */
+    text-align: center;
+    width: 100%; /* Ye isliye taaki element puri width le le aur text center ho sake */
+    display: block; /* Agar ye span tag hai to ye zaroori hai */
 }
 
 .nav-links {
@@ -2261,4 +2264,5 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
