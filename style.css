@@ -455,8 +455,8 @@ footer {
     z-index: 2;
     
     /* Text Design */
-    color: #ffffff;
-    font-size: 3rem; 
+    color: #777777;
+    font-size: 2rem; 
     font-weight: 700;
     width: 45%; /* Text ki width limit karne ke liye */
     line-height: 1.3;
