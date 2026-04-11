@@ -447,38 +447,39 @@ footer {
     z-index: 1;
 }
 
-/* --- Text Styling (Vertical Center) --- */
+/* --- Text Styling (Left Bottom, Italic, Single Line) --- */
 .slide-text {
     position: absolute;
-    bottom: 60px;
+    bottom: 50px; /* Image ke niche se 50px upar */
+    left: 0; /* Left side se start hoga */
     z-index: 2;
     
     /* Text Design */
     color: #ffffff;
-    font-size: 2rem; 
-    font-weight: 700;
-    width: 45%; /* Text ki width limit karne ke liye */
-    line-height: 1.3;
+    font-size: 2.5rem; 
+    font-weight: normal; /* Bold hataya */
+    font-style: italic; /* Italic kiya */
+    width: 50%; /* Image ki 50% width */
+    
+    /* Single Line ke liye (Text line nahi todega) */
+    white-space: nowrap; 
+    
     text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.6);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 0 50px;
+    padding: 0 40px;
     
     opacity: 0;
     transition: opacity 1s ease-in-out;
+    text-align: left; /* Text left side se align hoga */
 }
 
-/* --- Horizontal Positioning (Left/Right) --- */
-
-/* Left Side ke liye */
-.slide-text.text-left {
-    left: 0;
-    text-align: left;
-}
-
-/* Right Side ke liye */
+/* Ab humne left/right classes ka logic change kar diya hai 
+   taaki sab left side par aajayein */
+.slide-text.text-left,
 .slide-text.text-right {
-    right: 0;
-    text-align: right;
+    left: 0;
+    right: auto;
+    text-align: left;
 }
 
 /* Active slide mein text dikhayi dega */
@@ -489,15 +490,14 @@ footer {
 /* Responsive Settings */
 @media (max-width: 768px) {
     .slide-text {
-        font-size: 1.5rem; /* Mobile par chota text */
-        width: 80%; /* Mobile par thoda wide */
+        font-size: 1.2rem; /* Mobile par size kam */
+        width: 70%; /* Mobile par thoda width badha liya */
         padding: 0 20px;
-    }
-    
-    .hero-bg-slider {
-        height: 400px;
+        bottom: 30px;
+        white-space: normal; /* Mobile par agar text lamba hai to wrap ho sake */
     }
 }
+
 /* Scroll Indicator */
 .scroll-indicator {
     position: absolute;
