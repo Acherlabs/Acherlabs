@@ -450,12 +450,11 @@ footer {
 /* --- Text Styling (Vertical Center) --- */
 .slide-text {
     position: absolute;
-    top: 50%; /* Upar aur Neeche ke middle mein */
-    transform: translateY(-50%); /* Exact vertical center karne ke liye */
+    bottom: 60px;
     z-index: 2;
     
     /* Text Design */
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 2rem; 
     font-weight: 700;
     width: 45%; /* Text ki width limit karne ke liye */
