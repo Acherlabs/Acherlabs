@@ -337,7 +337,7 @@ footer {
 
 /* --- Header Logo TM Style --- */
 .logo-section .tm-icon {
-    font-size: 0.3em;                        /* Size header ke liye */
+    font-size: 0.2em;                        /* Size header ke liye */
     font-family: Arial, Helvetica, sans-serif !important; /* Ye 'nasalization' font ko override karega */
     color: #960c0c;                          /* Header ke hisaab se Red color */
     vertical-align: super;
@@ -356,19 +356,11 @@ footer {
 
 /* --- Specific Style for Footer --- */
 .footer-brand .tm-icon {
-    font-size: 0.4em;
+    font-size: 0.3em;
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* --- Specific Style for Header (Navigation) --- */
-.footer-section .tm-icon {
-    font-size: 0.4em;       
-    /* YE LINE ZAROOR ADD KAREIN */
-    /* Ye 'nasalization' font ko override karega aur TM dikhayi dega */
-    font-family: Arial, Helvetica, sans-serif; 
-    color: #ffffff; /* Aapke Logo ki color (Red) */
-}
 /* D. Modals */
 .modal {
     display: none;
