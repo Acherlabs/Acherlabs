@@ -335,19 +335,31 @@ footer {
     font-weight: normal;
 }
 
+/* --- Base Style (Default) --- */
+.tm-icon {
+    font-size: 0.5em;       
+    vertical-align: super;
+    margin-left: 2px;
+    font-weight: normal;
+    /* Default font bhi set kar dete hain safety ke liye */
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
 /* --- Specific Style for Footer --- */
-/* Ye style SIRF tab apply hogi jab ye footer ke andar hoga */
 .footer-brand .tm-icon {
-    font-size: 0.3em;       /* Footer ke liye Size kam (0.5 se 0.4 kar diya) */
-    color: #ffffff;         /* Agar specifically color change karna ho */
+    font-size: 0.4em;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* --- Specific Style for Other Places (Example) --- */
-/* Agar header mein size alag karni ho to ye likhein: */
+/* --- Specific Style for Header (Navigation) --- */
 .logo-section .tm-icon {
-    font-size: 0.7em;       /* Header ke liye Size jyada */
+    font-size: 0.7em;       
+    /* YE LINE ZAROOR ADD KAREIN */
+    /* Ye 'nasalization' font ko override karega aur TM dikhayi dega */
+    font-family: Arial, Helvetica, sans-serif; 
+    color: #960c0c; /* Aapke Logo ki color (Red) */
 }
-
 /* D. Modals */
 .modal {
     display: none;
