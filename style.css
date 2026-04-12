@@ -337,7 +337,7 @@ footer {
 
 /* --- Header Logo TM Style --- */
 .logo-section .tm-icon {
-    font-size: 0.4em;                        /* Size header ke liye */
+    font-size: 0.3em;                        /* Size header ke liye */
     font-family: Arial, Helvetica, sans-serif !important; /* Ye 'nasalization' font ko override karega */
     color: #960c0c;                          /* Header ke hisaab se Red color */
     vertical-align: super;
