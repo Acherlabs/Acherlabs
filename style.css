@@ -326,11 +326,26 @@ footer {
     margin-right: 4px;
 }
 
-/* Trademark (TM) Symbol - Size Chota Karne ke liye */
+/* --- Base Style (Default) --- */
+/* Ye style sab jagah apply hogi jahan bhi tm-icon class lagegi */
 .tm-icon {
-    font-size: 0.5em; /* size */
-    vertical-align: super; /* Upar align karega */
+    font-size: 0.5em;       /* Default Size */
+    vertical-align: super;
     margin-left: 2px;
+    font-weight: normal;
+}
+
+/* --- Specific Style for Footer --- */
+/* Ye style SIRF tab apply hogi jab ye footer ke andar hoga */
+.footer-brand .tm-icon {
+    font-size: 0.3em;       /* Footer ke liye Size kam (0.5 se 0.4 kar diya) */
+    color: #ffffff;         /* Agar specifically color change karna ho */
+}
+
+/* --- Specific Style for Other Places (Example) --- */
+/* Agar header mein size alag karni ho to ye likhein: */
+.logo-section .tm-icon {
+    font-size: 0.7em;       /* Header ke liye Size jyada */
 }
 
 /* D. Modals */
