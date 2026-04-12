@@ -427,7 +427,7 @@ footer {
     background-position: center center;
     background-repeat: no-repeat;
     opacity: 0;
-    transition: opacity 10s ease-in-out;
+    transition: opacity 15s ease-in-out;
     z-index: 0;
 }
 
