@@ -318,6 +318,36 @@ footer {
     font-weight: bold; /* Optional: Name thoda bold karne ke liye */
 }
 
+/* --- Footer Quick Links --- */
+.footer-quick-links {
+    margin-bottom: 24px;
+}
+
+.footer-quick-links h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+.footer-links-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-link-item {
+    color: #94a3b8;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-link-item:hover {
+    color: #ffffff;
+    padding-left: 6px;
+}
+
 /* --- Base Style (Default) --- */
 /* Ye style sab jagah apply hogi jahan bhi tm-icon class lagegi */
 .tm-icon {
@@ -2262,52 +2292,6 @@ footer {
     text-align: center;
     font-size: 0.9rem;
     color: #22c55e;
-}
-
-/* --- Quick Links (Normal Style - Tawk style nahi) --- */
-.quick-links-card {
-    background: #ffffff;
-    border: 1px solid #e2e8f0;
-    padding: 32px;
-    border-radius: 16px;
-    margin-top: 30px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
-}
-
-/* Ye ensure karega ki Quick Links ka header Red nahi hai */
-.quick-links-card h2 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #0f172a; /* Black color */
-    background: transparent; /* No background */
-    margin-bottom: 24px;
-    padding: 0;
-    border-bottom: 1px solid #f1f5f9;
-    padding-bottom: 10px;
-}
-
-.quick-links-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-}
-
-.quick-link-btn {
-    padding: 12px 16px;
-    border-radius: 12px;
-    background: #f8fafc;
-    border: 1px solid #e2e8f0;
-    color: #0f172a;
-    font-size: 14px;
-    text-align: left;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.quick-link-btn:hover {
-    color: #960c0c;
-    background: #fff;
-    border-color: #cbd5e1;
 }
 
 /* Right Side Info Cards */
