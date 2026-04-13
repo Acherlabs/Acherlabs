@@ -1371,18 +1371,19 @@ footer {
 .btn-white-bg {
     display: inline-block;
     padding: 14px 32px;
-    background: #0f172a;
-    color: #fff;
+    background: #960c0c; /* Button Color Red kar diya */
+    color: #fff; /* Text White hai */
     font-weight: 600;
     font-size: 1rem;
     border-radius: 50px;
     text-decoration: none;
     transition: all 0.3s ease;
-    border: 2px solid #0f172a;
+    border: 2px solid #960c0c; /* Border bhi Red kar diya */
 }
 
 .btn-white-bg:hover {
-    background: #1e293b;
+    background: #7a0a0a; /* Hover karne par thoda dark red hoga */
+    border-color: #7a0a0a; /* Hover par border bhi dark red */
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
