@@ -910,9 +910,10 @@ footer {
     margin: 0 auto;
     padding: 96px 16px;
     position: relative;
-    overflow-x: hidden; /* Horizontal scroll roko */
+    overflow-x: hidden;
 }
 
+/* --- TOP GRID (Text + Image) --- */
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -942,72 +943,15 @@ footer {
     margin-bottom: 24px;
 }
 
-/* --- FULL WIDTH LINE --- */
-.full-width-line {
-    border: 0;
-    height: 1px;
-    background: #e2e8f0;
-    margin: 20px 0;
-    
-    /* Line ko screen bhar ki width do */
-    width: 100vw;
-    position: relative;
-    left: calc(-50vw + 50%);
-}
-
-/* --- CORE COMPETENCIES LAYOUT (Side by Side) --- */
-.focus-areas {
-    display: flex; /* Ye Label aur List ko side-by-side layega */
-    align-items: flex-start; /* Top se align karega */
-    gap: 30px; /* Label aur List ke beech gap */
-    margin-top: 10px;
-}
-
-/* Label Styling */
-.competency-label {
-    flex: 0 0 180px; /* Label ki fixed width (adjust kar sakte ho) */
-    padding-top: 2px; /* Thoda sa top adjust */
-}
-
-.competency-list {
-    flex: 1; /* Baaki ki space list legi */
-}
-
-/* List ko 2 columns mein convert kiya */
-.competency-list ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* 2 Columns */
-    gap: 8px 30px; /* Row aur Column gap */
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.competency-list ul li {
-    font-size: 16px;
-    color: #333;
-    position: relative;
-    padding-left: 20px;
-    line-height: 1.5;
-}
-
-/* Bullet Point */
-.competency-list ul li::before {
-    content: '•';
-    color: #960c0c;
-    font-weight: bold;
-    position: absolute;
-    left: 0;
-}
-
 .about-image {
     position: relative;
 }
 
 .about-image img {
     width: 100%;
-    height: 600px;
+    height: 500px; /* Height thodi adjust ki */
     object-fit: cover;
+    object-position: top;
     border-radius: 24px;
     box-shadow: 0 25px 50px rgba(0,0,0,0.1);
 }
@@ -1019,28 +963,78 @@ footer {
     border-radius: 24px;
 }
 
-/* Mission Card Styling */
 .mission-card {
     position: absolute;
     bottom: 30px;
     left: 30px;
     right: 30px;
-    background: rgba(150, 12, 12, 0.9); /* Dark Red Overlay */
+    background: rgba(150, 12, 12, 0.9);
     padding: 20px;
     border-radius: 12px;
     color: #fff;
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
+.mission-card h4 { margin: 0 0 5px 0; font-size: 1.2rem; }
+.mission-card p { margin: 0; font-size: 0.9rem; color: rgba(255,255,255,0.9); }
 
-.mission-card h4 {
-    margin: 0 0 5px 0;
-    font-size: 1.2rem;
+/* --- BOTTOM FULL WIDTH SECTION (List) --- */
+.bottom-full-section {
+    margin-top: 40px; /* Grid ke niche space */
 }
 
-.mission-card p {
+.full-width-line {
+    border: 0;
+    height: 1px;
+    background: #e2e8f0;
+    margin-bottom: 30px;
+    width: 100vw;
+    position: relative;
+    left: calc(-50vw + 50%);
+}
+
+/* List Layout */
+.focus-areas-full {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.competency-label {
+    flex: 0 0 250px; /* Label ki width */
+    padding-top: 2px;
+}
+
+.competency-list-full {
+    flex: 1;
+}
+
+/* List Items Styling */
+.competency-list-full ul {
+    display: grid;
+    grid-template-columns: 1fr; /* SIRF 1 COLUMN (Ab aapki lambi line fit hogi) */
+    gap: 12px;
+    list-style: none;
+    padding: 0;
     margin: 0;
-    font-size: 0.9rem;
-    color: rgba(255,255,255,0.9);
+}
+
+.competency-list-full ul li {
+    font-size: 16px;
+    color: #333;
+    position: relative;
+    padding-left: 25px;
+    line-height: 1.6;
+    white-space: nowrap; /* Force Single Line */
+}
+
+/* Bullet */
+.competency-list-full ul li::before {
+    content: '•';
+    color: #960c0c;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
 }
 
 /* Responsive */
@@ -1054,19 +1048,13 @@ footer {
         left: 0;
     }
     
-    /* Mobile par Label uper, List neeche (Column layout) */
-    .focus-areas {
+    .focus-areas-full {
         flex-direction: column;
         gap: 15px;
     }
     
-    .competency-label {
-        flex: none;
-        width: 100%;
-    }
-
-    .competency-list ul {
-        grid-template-columns: 1fr; /* Mobile par 1 column */
+    .competency-list-full ul li {
+        white-space: normal; /* Mobile par text wrap ho jayega */
     }
     
     .about-image {
@@ -1075,13 +1063,6 @@ footer {
     
     .about-image img {
         height: 300px;
-    }
-    
-    .mission-card {
-        left: 15px;
-        right: 15px;
-        bottom: 15px;
-        padding: 15px;
     }
 }
 
