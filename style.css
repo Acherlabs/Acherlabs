@@ -1389,7 +1389,7 @@ footer {
 }
 
 /* ============================================
-   5. PAGE: Labs
+   MAIN PAGE - PipingLab Hero Section Only
    ============================================ */
 
 .Labs-page {
@@ -1406,22 +1406,20 @@ footer {
 /* A. PipingLab Hero Section */
 .pipingleb-section {
     position: relative;
-    /* BOX HATANE KE LIYE YE CHANGES KIYE HAIN */
-    border-radius: 0;          /* Pehle 24px tha */
-    overflow: visible;         /* Content cut na ho isliye visible kiya */
+    border-radius: 0;
+    overflow: visible;
     margin-bottom: 80px;
     margin-top: 100px;
-    background: transparent;   /* Pehle #ffffff tha */
-    border: none;              /* Pehle border tha */
+    background: transparent;
+    border: none;
 }
 
 .pipingleb-bg {
     position: absolute;
     inset: 0;
-    /* Gradient se white (#ffffff) hataya, ab sirf light glow rahegi */
     background: linear-gradient(to right, rgba(59, 130, 246, 0.03), transparent, rgba(139, 92, 246, 0.03));
     z-index: 1;
-    pointer-events: none; /* Taaki text select ho sake */
+    pointer-events: none;
 }
 
 .pipingleb-glow {
@@ -1461,8 +1459,6 @@ footer {
     gap: 48px;
     align-items: center;
     padding: 64px;
-    /* Agar page ka background color match karna ho to ye use kar sakte hain */
-    /* background-color: #f8fafc;  */
 }
 
 .pipingleb-badge {
@@ -1569,7 +1565,180 @@ footer {
     }
 }
 
-/* B. Capabilities Section */
+/* ============================================
+   EXPLORE PAGE - Full CSS (Hero + All Sections)
+   ============================================ */
+
+.Labs-page {
+    background: #f8fafc;
+    min-height: 100vh;
+}
+
+.Labs-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 96px 16px;
+}
+
+/* ========================================
+   A. PipingLab Hero Section
+   ======================================== */
+.pipingleb-section {
+    position: relative;
+    border-radius: 0;
+    overflow: visible;
+    margin-bottom: 80px;
+    margin-top: 100px;
+    background: transparent;
+    border: none;
+}
+
+.pipingleb-bg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(59, 130, 246, 0.03), transparent, rgba(139, 92, 246, 0.03));
+    z-index: 1;
+    pointer-events: none;
+}
+
+.pipingleb-glow {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.pipingleb-glow .glow-1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 400px;
+    background: rgba(59, 130, 246, 0.1);
+    border-radius: 50%;
+    filter: blur(80px);
+}
+
+.pipingleb-glow .glow-2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 400px;
+    height: 400px;
+    background: rgba(139, 92, 246, 0.1);
+    border-radius: 50%;
+    filter: blur(80px);
+}
+
+.pipingleb-content {
+    position: relative;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+    padding: 64px;
+}
+
+.pipingleb-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 50px;
+    background: linear-gradient(to right, #960c0c);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.pipingleb-badge .pulse-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #fff;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.pipingleb-content h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #960c0c;
+    margin-bottom: 24px;
+}
+
+.pipingleb-content p {
+    font-size: 18px;
+    color: #000000;
+    line-height: 1.7;
+    margin-bottom: 24px;
+}
+
+.pipingleb-image {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+}
+
+.pipingleb-image img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+    border-radius: 16px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+}
+
+.pipingleb-stats {
+    position: absolute;
+    bottom: -20px;
+    left: 16px;
+    right: 16px;
+    display: flex;
+    gap: 16px;
+    z-index: 20;
+}
+
+.pipingleb-stat {
+    flex: 1;
+    padding: 16px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(8px);
+    border: 1px solid #e2e8f0;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.pipingleb-stat .value {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.pipingleb-stat .value.cyan {
+    color: #0891b2;
+}
+
+.pipingleb-stat .value.purple {
+    color: #7c3aed;
+}
+
+.pipingleb-stat .value.orange {
+    color: #ea580c;
+}
+
+.pipingleb-stat .label {
+    font-size: 12px;
+    color: #000000;
+}
+
+/* ========================================
+   B. Capabilities Section
+   ======================================== */
 .capabilities-clean-section {
     padding: 100px 20px;
     background-color: #ffffff;
@@ -1652,7 +1821,9 @@ footer {
     border-radius: 5px;
 }
 
-/* C. Timeline Section */
+/* ========================================
+   C. Timeline Section
+   ======================================== */
 .journey-section {
     padding: 100px 20px;
     background-color: #f8fafc;
@@ -1744,7 +1915,9 @@ footer {
     line-height: 1.5;
 }
 
-/* D. Split Security Section */
+/* ========================================
+   D. Split Security Section
+   ======================================== */
 .split-section {
     display: flex;
     flex-wrap: wrap;
@@ -1835,7 +2008,9 @@ footer {
     font-size: 0.9rem;
 }
 
-/* E. Tags Section */
+/* ========================================
+   E. Tags Section
+   ======================================== */
 .tags-container {
     padding: 60px 20px;
     background: #ffffff;
@@ -1871,7 +2046,9 @@ footer {
     font-weight: bold;
 }
 
-/* F. Features Grid */
+/* ========================================
+   F. Features Grid
+   ======================================== */
 .features-section h2 {
     font-size: 2rem;
     font-weight: bold;
@@ -1939,7 +2116,9 @@ footer {
     line-height: 1.6;
 }
 
-/* G. CTA Section */
+/* ========================================
+   G. CTA Section
+   ======================================== */
 .cta-section {
     text-align: center;
     padding: 48px;
@@ -1962,6 +2141,16 @@ footer {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* ========================================
+   Responsive - Shared
+   ======================================== */
+@media (max-width: 768px) {
+    .pipingleb-content {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
 }
 
 /* ============================================
