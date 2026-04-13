@@ -318,14 +318,6 @@ footer {
     font-weight: bold; /* Optional: Name thoda bold karne ke liye */
 }
 
-/* Copyright (C) Symbol - Size Bada Karne ke liye */
-.copyright-icon {
-    font-size: 0.9em; /* size */
-    font-weight: bold;
-    display: inline-block;
-    margin-right: 4px;
-}
-
 /* --- Base Style (Default) --- */
 /* Ye style sab jagah apply hogi jahan bhi tm-icon class lagegi */
 .tm-icon {
