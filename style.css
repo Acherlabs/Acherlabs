@@ -1176,8 +1176,18 @@ footer {
 .cv-header h2 {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #960c0c;
     margin-bottom: 10px;
+    /* color: #960c0c; ← Ye line hata do kyunki ab alag-alag colors hain */
+}
+
+/* Our Core ka gray color */
+.cv-header h2 .cv-gray {
+    color: #777777;
+}
+
+/* Values ka red color */
+.cv-header h2 .cv-red {
+    color: #960c0c;
 }
 
 .cv-header p {
@@ -1301,7 +1311,7 @@ footer {
 
 /* "Why Choose" text ka color */
 .why-choose .section-title {
-    color: #960c0c;
+    color: #777777;
 }
 
 /* "AChERLABs" text ka gradient hata kar color lagane ke liye */
