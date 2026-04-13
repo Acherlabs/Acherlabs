@@ -614,7 +614,8 @@ footer {
 /* Welcome to ka gray color */
 .hero h1 .welcome-text {
     color: #777777;
-    -webkit-text-fill-color: #777777; 
+    -webkit-text-fill-color: #777777;
+    font-size: 0.8em;
 }
 
 /* AChERLABs ka red gradient */
@@ -623,6 +624,7 @@ footer {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    font-size: 0.8em;
 }
 
 .hero h1 span.gradient {
