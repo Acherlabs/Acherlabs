@@ -773,6 +773,7 @@ footer {
     font-weight: bold;
     color: #fff;
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    z-index: 10; /* Number upar rahega */
 }
 
 /* --- RESPONSIVE STYLES (Mobile View) --- */
@@ -782,6 +783,24 @@ footer {
     .industry-row.reverse {
         flex-direction: column !important;
         text-align: center;
+    }
+
+    /* FIX: Content aur Image ki width 100% kar di */
+    .industry-content {
+        min-width: 100%;
+    }
+
+    .industry-image {
+        min-width: 100%;
+        width: 100%;
+    }
+
+    /* FIX: Image auto fit hogi aur cut nahi hogi */
+    .industry-image img {
+        height: auto; /* Height auto kar di */
+        min-height: 250px; /* Minimum height */
+        max-height: 350px; /* Maximum height */
+        object-fit: contain; /* Puri image dikhegi, crop nahi hogi */
     }
 
     /* Number tab center karein jab image ke upar ho */
@@ -804,6 +823,7 @@ footer {
         text-align: center;
     }
 }
+
 /* C. Features Section */
 .features {
     padding: 80px 16px;
