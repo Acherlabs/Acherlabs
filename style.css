@@ -1406,19 +1406,22 @@ footer {
 /* A. PipingLab Hero Section */
 .pipingleb-section {
     position: relative;
-    border-radius: 24px;
-    overflow: hidden;
+    /* BOX HATANE KE LIYE YE CHANGES KIYE HAIN */
+    border-radius: 0;          /* Pehle 24px tha */
+    overflow: visible;         /* Content cut na ho isliye visible kiya */
     margin-bottom: 80px;
     margin-top: 100px;
-    background: #ffffff;
-    border: 1px solid #e2e8f0;
+    background: transparent;   /* Pehle #ffffff tha */
+    border: none;              /* Pehle border tha */
 }
 
 .pipingleb-bg {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to right, rgba(59, 130, 246, 0.05), #ffffff, rgba(139, 92, 246, 0.05));
+    /* Gradient se white (#ffffff) hataya, ab sirf light glow rahegi */
+    background: linear-gradient(to right, rgba(59, 130, 246, 0.03), transparent, rgba(139, 92, 246, 0.03));
     z-index: 1;
+    pointer-events: none; /* Taaki text select ho sake */
 }
 
 .pipingleb-glow {
@@ -1458,6 +1461,8 @@ footer {
     gap: 48px;
     align-items: center;
     padding: 64px;
+    /* Agar page ka background color match karna ho to ye use kar sakte hain */
+    /* background-color: #f8fafc;  */
 }
 
 .pipingleb-badge {
@@ -1554,6 +1559,14 @@ footer {
 .pipingleb-stat .label {
     font-size: 12px;
     color: #000000;
+}
+
+/* Responsive fix for mobile */
+@media (max-width: 768px) {
+    .pipingleb-content {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
 }
 
 /* B. Capabilities Section */
