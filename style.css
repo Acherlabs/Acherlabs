@@ -1248,7 +1248,21 @@ footer {
     font-size: 14px;
 }
 
-.why-choose {
+..why-choose {
+    margin-top: 5px;
+}
+
+/* "Why Choose" text ka color */
+.why-choose .section-title {
+    color: #960c0c;
+}
+
+/* "AChERLABs" text ka gradient hata kar color lagane ke liye */
+.why-choose .section-title span.gradient {
+    background: none;
+    -webkit-text-fill-color: #960c0c;
+    color: #960c0c;
+} {
     margin-top: 5px;
 }
 
