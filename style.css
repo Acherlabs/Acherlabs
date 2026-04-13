@@ -1410,7 +1410,7 @@ footer {
     position: relative;
     border-radius: 0;
     overflow: visible;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     background: transparent;
     border: none;
 }
@@ -1728,7 +1728,7 @@ footer {
    B. Capabilities Section
    ======================================== */
 .capabilities-clean-section {
-    padding: 100px 20px;
+    padding: 10px 20px;
     background-color: #ffffff;
     position: relative;
 }
