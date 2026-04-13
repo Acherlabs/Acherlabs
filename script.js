@@ -265,7 +265,7 @@ function initHeroSlider() {
             slides[currentSlide].classList.add('active');
         }
 
-        setInterval(nextSlide, 3000);
+        setInterval(nextSlide, 7000);
     }
 }
 
