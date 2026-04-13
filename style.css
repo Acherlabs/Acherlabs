@@ -743,35 +743,34 @@ footer {
     flex: 1.2;
     min-width: 300px;
     position: relative;
+    /* FIX: Number badge ka cut na ho isliye */
+    overflow: visible; 
 }
 
-/* --- DESKTOP IMAGE FIX (NO CROP) --- */
+/* --- DESKTOP IMAGE FIX (Auto Height - No Crop) --- */
 .industry-image img {
     width: 100%;
-    height: 400px; /* Box ki height fix hai */
     
-    /* YE LINE MAGIC HAI: 'contain' puri image dikhayega, cut nahi karega */
-    object-fit: contain; 
+    /* YE LINE PURI IMAGE DIKHAYEGI - CUT NAHI HOGI */
+    height: auto; 
+    max-height: 500px; /* Maximum height limit (optional) */
     
-    /* Agar image chhota ho toh center mein aayega */
-    object-position: center; 
-    
-    /* Agar image transparent hai ya chhota hai to background dikhega */
-    background-color: #f1f5f9; 
+    object-fit: contain; /* Puri image fit hogi */
+    object-position: center;
+    background-color: #f1f5f9; /* Khali jagah ka background */
     
     border-radius: 16px;
     box-shadow: 0 25px 50px rgba(0,0,0,0.1);
     
-    /* Z-Index Logic for Hover */
     position: relative;
     z-index: 1;
     transition: transform 0.5s ease;
 }
 
-/* Hover Effect */
+/* Hover Effect: Image aage aayegi */
 .industry-row:hover .industry-image img {
     transform: scale(1.03);
-    z-index: 20; /* Hover par image number ke upar aajayegi */
+    z-index: 20; /* Hover par number ke upar image */
 }
 
 /* NUMBER STYLING */
@@ -791,7 +790,6 @@ footer {
     color: #fff;
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     z-index: 10; /* Number normally upar rahega */
-    transition: all 0.3s ease;
 }
 
 /* --- RESPONSIVE STYLES (Mobile View) --- */
@@ -811,13 +809,11 @@ footer {
         width: 100%;
     }
 
-    /* Mobile ke liye bhi contain hi use karenge */
+    /* Mobile ke liye bhi auto height */
     .industry-image img {
         height: auto;
-        min-height: 250px;
-        max-height: 400px; /* Thoda bada kar diya mobile ke liye */
-        object-fit: contain; /* Puri image safe */
-        object-position: center;
+        max-height: 400px;
+        object-fit: contain;
     }
 
     /* Mobile mein number center */
