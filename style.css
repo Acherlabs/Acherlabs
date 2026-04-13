@@ -1389,7 +1389,7 @@ footer {
 }
 
 /* ============================================
-   MAIN PAGE - PipingLab Hero Section Only
+   5. PAGE: Labs
    ============================================ */
 
 .Labs-page {
@@ -1568,17 +1568,6 @@ footer {
 /* ============================================
    EXPLORE PAGE - Full CSS (Hero + All Sections)
    ============================================ */
-
-.Labs-page {
-    background: #f8fafc;
-    min-height: 100vh;
-}
-
-.Labs-container {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 96px 16px;
-}
 
 /* ========================================
    A. PipingLab Hero Section
@@ -2144,7 +2133,7 @@ footer {
 }
 
 /* ========================================
-   Responsive - Shared
+   Responsive
    ======================================== */
 @media (max-width: 768px) {
     .pipingleb-content {
