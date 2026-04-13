@@ -2215,6 +2215,8 @@ footer {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    width: 600px;
+    height: 700px;
 }
 
 /* Header Section (Sirf Form ke title par lagega) */
