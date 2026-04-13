@@ -1678,8 +1678,6 @@ footer {
     height: auto;
     max-height: 500px;
     object-fit: contain;
-    border-radius: 16px;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
 }
 
 .pipingleb-stats {
