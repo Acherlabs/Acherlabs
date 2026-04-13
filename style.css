@@ -943,6 +943,33 @@ footer {
     margin-bottom: 24px;
 }
 
+/* --- BADGES STYLE (Wapas add kiya) --- */
+.about-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 14px;
+}
+
+.badge.green { background: rgba(34, 197, 94, 0.1); color: #15803d; }
+.badge.blue { background: rgba(59, 130, 246, 0.1); color: #1d4ed8; }
+.badge.purple { background: rgba(139, 92, 246, 0.1); color: #6d28d9; }
+
+.badge-dot-sm { width: 8px; height: 8px; border-radius: 50%; }
+.badge.green .badge-dot-sm { background: #15803d; }
+.badge.blue .badge-dot-sm { background: #1d4ed8; }
+.badge.purple .badge-dot-sm { background: #6d28d9; }
+
+/* --- IMAGE STYLE --- */
 .about-image {
     position: relative;
 }
@@ -963,7 +990,7 @@ footer {
     border-radius: 24px;
 }
 
-/* Mission Card Style */
+/* Mission Card */
 .mission-card {
     position: absolute;
     bottom: 30px;
@@ -993,36 +1020,29 @@ footer {
     left: calc(-50vw + 50%);
 }
 
-/* Flex Wrapper for Box + List */
+/* Flex Wrapper */
 .competency-wrapper {
     display: flex;
-    align-items: center; /* Box vertically center mein aayega */
+    align-items: center;
     gap: 30px;
 }
 
-/* --- CORE COMPETENCIES BOX (Our Mission jaisa) --- */
+/* Competency Box */
 .competency-box {
-    background: rgba(150, 12, 12, 0.9); /* Same color as Mission Card */
+    background: rgba(150, 12, 12, 0.9);
     color: #fff;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    
-    /* Box sizing */
-    flex-shrink: 0; /* Box shrink nahi hoga */
-    width: 180px;   /* Fixed width */
+    flex-shrink: 0;
+    width: 180px;
     text-align: center;
 }
+.competency-box h4 { margin: 0; font-size: 1.1rem; line-height: 1.4; }
 
-.competency-box h4 {
-    margin: 0;
-    font-size: 1.1rem;
-    line-height: 1.4;
-}
-
-/* --- LIST STYLE --- */
+/* List */
 .competency-list-full {
-    flex: 1; /* Baaki ki space list legi */
+    flex: 1;
 }
 
 .competency-list-full ul {
@@ -1030,7 +1050,7 @@ footer {
     padding: 0;
     margin: 0;
     display: grid;
-    grid-template-columns: 1fr; /* Single Column */
+    grid-template-columns: 1fr;
     gap: 10px;
 }
 
@@ -1040,10 +1060,9 @@ footer {
     position: relative;
     padding-left: 25px;
     line-height: 1.6;
-    white-space: nowrap; /* 1 Line mein text */
+    white-space: nowrap;
 }
 
-/* Bullet */
 .competency-list-full ul li::before {
     content: '•';
     color: #960c0c;
@@ -1059,12 +1078,15 @@ footer {
         grid-template-columns: 1fr;
     }
     
+    .about-badges {
+        justify-content: center !important; /* Mobile par center */
+    }
+
     .full-width-line {
         width: 100%;
         left: 0;
     }
     
-    /* Mobile par Box uper, List neeche */
     .competency-wrapper {
         flex-direction: column;
         align-items: flex-start;
@@ -1076,7 +1098,7 @@ footer {
     }
     
     .competency-list-full ul li {
-        white-space: normal; /* Mobile par text wrap hoga */
+        white-space: normal;
     }
     
     .about-image {
