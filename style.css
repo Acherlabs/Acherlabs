@@ -909,14 +909,15 @@ footer {
     max-width: 1280px;
     margin: 0 auto;
     padding: 96px 16px;
+    position: relative;
+    overflow-x: hidden; /* Horizontal scroll roko */
 }
 
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 48px;
-    /* CHANGE: Center ki jagah start kiya taaki image uper jaye */
-    align-items: flex-start; 
+    align-items: flex-start; /* Image uper rahegi */
 }
 
 .about-content h1 {
@@ -941,78 +942,66 @@ footer {
     margin-bottom: 24px;
 }
 
-/* --- FULL WIDTH LINE (Image ke niche tak) --- */
+/* --- FULL WIDTH LINE --- */
 .full-width-line {
     border: 0;
     height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
-    margin: 30px 0;
+    background: #e2e8f0;
+    margin: 20px 0;
     
-    /* Line ko image ke niche tak le jane ke liye */
-    width: 200%; /* Width badha li */
+    /* Line ko screen bhar ki width do */
+    width: 100vw;
     position: relative;
+    left: calc(-50vw + 50%);
+}
+
+/* --- CORE COMPETENCIES LAYOUT (Side by Side) --- */
+.focus-areas {
+    display: flex; /* Ye Label aur List ko side-by-side layega */
+    align-items: flex-start; /* Top se align karega */
+    gap: 30px; /* Label aur List ke beech gap */
+    margin-top: 10px;
+}
+
+/* Label Styling */
+.competency-label {
+    flex: 0 0 180px; /* Label ki fixed width (adjust kar sakte ho) */
+    padding-top: 2px; /* Thoda sa top adjust */
+}
+
+.competency-list {
+    flex: 1; /* Baaki ki space list legi */
+}
+
+/* List ko 2 columns mein convert kiya */
+.competency-list ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 Columns */
+    gap: 8px 30px; /* Row aur Column gap */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.competency-list ul li {
+    font-size: 16px;
+    color: #333;
+    position: relative;
+    padding-left: 20px;
+    line-height: 1.5;
+}
+
+/* Bullet Point */
+.competency-list ul li::before {
+    content: '•';
+    color: #960c0c;
+    font-weight: bold;
+    position: absolute;
     left: 0;
 }
 
-.about-stats {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
-    margin-top: 32px;
-}
-
-.stat-box {
-    text-align: center;
-    padding: 16px;
-    border-radius: 12px;
-    background: rgba(255, 255, 255, 0.5);
-    border: 1px solid #e2e8f0;
-}
-
-.stat-box .number {
-    font-size: 28px;
-    font-weight: bold;
-    background: linear-gradient(to right, #960c0c);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.stat-box .label {
-    color: #000000;
-    font-size: 14px;
-    margin-top: 4px;
-}
-
-.about-badges {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    margin-top: 24px;
-}
-
-.badge {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 8px 16px;
-    border-radius: 50px;
-    font-size: 14px;
-}
-
-.badge.green { background: rgba(34, 197, 94, 0.1); color: #15803d; }
-.badge.blue { background: rgba(59, 130, 246, 0.1); color: #1d4ed8; }
-.badge.purple { background: rgba(139, 92, 246, 0.1); color: #6d28d9; }
-
-.badge-dot-sm { width: 8px; height: 8px; border-radius: 50%; }
-.badge.green .badge-dot-sm { background: #15803d; }
-.badge.blue .badge-dot-sm { background: #1d4ed8; }
-.badge.purple .badge-dot-sm { background: #6d28d9; }
-
 .about-image {
     position: relative;
-    /* Agar image aur uper chahiye to margin-top se adjust kar sakte hain */
-    margin-top: 0; 
 }
 
 .about-image img {
@@ -1030,23 +1019,69 @@ footer {
     border-radius: 24px;
 }
 
+/* Mission Card Styling */
+.mission-card {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+    background: rgba(150, 12, 12, 0.9); /* Dark Red Overlay */
+    padding: 20px;
+    border-radius: 12px;
+    color: #fff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.mission-card h4 {
+    margin: 0 0 5px 0;
+    font-size: 1.2rem;
+}
+
+.mission-card p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.9);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .about-grid {
         grid-template-columns: 1fr;
     }
     
-    /* Mobile par line ki width normal kar di */
     .full-width-line {
         width: 100%;
+        left: 0;
+    }
+    
+    /* Mobile par Label uper, List neeche (Column layout) */
+    .focus-areas {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .competency-label {
+        flex: none;
+        width: 100%;
+    }
+
+    .competency-list ul {
+        grid-template-columns: 1fr; /* Mobile par 1 column */
     }
     
     .about-image {
-        order: -1; /* Mobile par image uper */
+        order: -1;
     }
     
     .about-image img {
-        height: 300px; /* Mobile par height kam */
+        height: 300px;
+    }
+    
+    .mission-card {
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+        padding: 15px;
     }
 }
 
