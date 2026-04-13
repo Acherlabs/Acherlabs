@@ -745,24 +745,28 @@ footer {
     position: relative;
 }
 
-/* IMAGE STYLING */
+/* --- DESKTOP IMAGE FIX --- */
 .industry-image img {
     width: 100%;
     height: 400px;
     object-fit: cover;
+    
+    /* YE LINE ADD KI HAI: Ab upar ka part cut nahi hoga, dikhega */
+    object-position: top center; 
+    
     border-radius: 16px;
     box-shadow: 0 25px 50px rgba(0,0,0,0.1);
-    transition: transform 0.5s ease;
     
-    /* FIX: Z-index ke liye position relative hona chahiye */
+    /* Z-Index Logic for Hover */
     position: relative;
-    z-index: 1; /* Normal state mein number (z-index 10) ke neeche */
+    z-index: 1;
+    transition: transform 0.5s ease, z-index 0s; 
 }
 
-/* HOVER EFFECT: Image aage aayegi */
+/* Hover Effect: Image aage aayegi */
 .industry-row:hover .industry-image img {
     transform: scale(1.03);
-    z-index: 20; /* Hover mein number (z-index 10) ke upar chali jayegi */
+    z-index: 20; /* Hover par number (z-index 10) ke upar image aajayegi */
 }
 
 /* NUMBER STYLING */
@@ -802,12 +806,13 @@ footer {
         width: 100%;
     }
 
-    /* Mobile ke liye image auto fit */
+    /* Mobile ke liye image auto fit (Puri image dikhegi) */
     .industry-image img {
-        height: auto;
+        height: auto; /* Height hatayi */
         min-height: 250px;
         max-height: 350px;
-        object-fit: contain;
+        object-fit: contain; /* Puri image fit hogi */
+        object-position: center; /* Center align */
     }
 
     /* Mobile mein number center */
