@@ -200,7 +200,7 @@ function initDownloadModal() {
 
     // --- Form Submit Handler ---
     const scriptURL = "https://script.google.com/macros/s/AKfycbyT-EM5ItFY9CR3271O-f1OvTUkD2AgIdfzrXMcGjh8g0v0qTnaKucbq1dXzlzsRDk0/exec";
-    const fileId = "1FoLEzPitZsMP3ofN0qplCrHDA9W8XH_e";
+    const fileId = "1kfCGTqEqaPotWRPQJARdsSGD0MmFR4OO";
     const downloadLink = "https://drive.google.com/uc?export=download&id=" + fileId;
 
     form.addEventListener("submit", function(e) {
