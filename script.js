@@ -199,7 +199,7 @@ function initDownloadModal() {
     }
 
     // --- Form Submit Handler ---
-    const scriptURL = "https://script.google.com/macros/s/AKfycbxUDh4PPGMqKNqHhOVzUK087Drx18zh-cnaEg9tVhbZ5LiLj5owOkmHT-GIQONeZwze/exec";
+    const scriptURL = "https://script.google.com/macros/s/AKfycbyF9Z4XwhqCa8Mi97aZqtvhqUCMRBZJJAJZluqQSsOtCmtsT6RZFHbkACeF5fT7FXFo/exec";
     const fileId = "1kqtQLNplcL7OV_js9y0YZib0g04ABM1_"; //PipingLab Softwer file Download//
     const downloadLink = "https://drive.google.com/uc?export=download&id=" + fileId;
 
