@@ -199,8 +199,8 @@ function initDownloadModal() {
     }
 
     // --- Form Submit Handler ---
-    const scriptURL = "https://script.google.com/macros/s/AKfycby6VFDZstUhTPKuwG9yaSvvls04jUAG3pHM7ICBodeHbQFj4JrdOUDGIGsZ4Cx_2APC/exec";
-    const fileId = "1kqtQLNplcL7OV_js9y0YZib0g04ABM1_"; //PipingLab Softwer Download//
+    const scriptURL = "https://script.google.com/macros/s/AKfycbyLKXgvCuBZMpGA89Z9uA2Wh3YyQ4HIiam26XZTdCdUEtSX3_IBYVOEjd7z7WfLk21t/exec";
+    const fileId = "1kqtQLNplcL7OV_js9y0YZib0g04ABM1_"; //PipingLab Softwer file Download//
     const downloadLink = "https://drive.google.com/uc?export=download&id=" + fileId;
 
     form.addEventListener("submit", function(e) {
