@@ -2681,6 +2681,72 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+/* ========================================
+   ClampLogic Page - Extra Styles
+   (software.css ke end mein paste karo)
+   ======================================== */
 
+/* Gradient text shared */
+.gradient-text {
+    background: linear-gradient(90deg, #960c0c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
+/* Features section background fix */
+.features-section {
+    background: #ffffff;
+}
 
+/* Footer background (agar dark hai toh) */
+footer {
+    background: #0f172a;
+    padding: 60px 20px 30px 20px;
+}
+
+footer a {
+    color: #94a3b8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+footer h4 {
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #94a3b8;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #1e293b;
+}
+
+/* Total value highlight */
+.features-section,
+.capabilities-clean-section,
+.split-section,
+.journey-section,
+.tags-container {
+    position: relative;
+}
