@@ -2038,7 +2038,7 @@ footer {
     justify-content: center;
     font-size: 1.2rem;
     margin-right: 20px;
-    color: #3b82f6;
+    color: #960c0c;
 }
 
 .inline-info h4 {
@@ -2124,7 +2124,7 @@ footer {
 }
 
 .Labs-feature:hover {
-    border-color: #3b82f6;
+    border-color: #960c0c;
     transform: translateY(-4px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.05);
 }
