@@ -1727,10 +1727,13 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .pipingleb-image img {
-    width: 100%;
+    width: 110%;
+    margin-left: -5%;
+    margin-top: -5%;
     height: auto;
 }
 
