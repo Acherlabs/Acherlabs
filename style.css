@@ -1736,13 +1736,16 @@ footer {
 }
 
 .pipingleb-stats {
-    position: absolute;
-    bottom: -20px;
-    left: 16px;
-    right: 16px;
+    position: relative;
+    margin-top: -40px;
+    margin-bottom: 20px;
+    justify-content: center;
+    width: 100%;
+    background: #f8fafc;
+    padding-top: 10px;
     display: flex;
     gap: 16px;
-    z-index: 20;
+    z-index: 10;
 }
 
 .pipingleb-stat {
