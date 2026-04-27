@@ -2752,18 +2752,18 @@ footer p {
 }
 
 /* ============================================
-   ARMURE PAGE - Premium Styling Updates
+   ARMOR PAGE - Premium Styling Updates
    ============================================ */
 
 /* Hero Text Styling for Pain vs Solution */
-.armure-text-block p {
+.armor-text-block p {
     font-size: 16px;
     color: #000000;
     line-height: 1.7;
     margin-bottom: 20px;
 }
 
-.armure-label {
+.armor-label {
     display: inline-block;
     font-size: 12px;
     font-weight: 700;
@@ -2773,7 +2773,7 @@ footer p {
     margin-bottom: 8px;
 }
 
-.armure-pain-point {
+.armor-pain-point {
     background: #ffffff;
     border-left: 4px solid #960c0c;
     padding: 15px 20px;
@@ -2782,7 +2782,7 @@ footer p {
     box-shadow: 0 4px 15px rgba(0,0,0,0.03);
 }
 
-.armure-solution-point {
+.armor-solution-point {
     background: #ffffff;
     border-left: 4px solid #000000;
     padding: 15px 20px;
@@ -2790,7 +2790,7 @@ footer p {
     box-shadow: 0 4px 15px rgba(0,0,0,0.03);
 }
 
-.armure-subtitle {
+.armor-subtitle {
     font-size: 1.1rem; 
     color: #777777; 
     margin-bottom: 25px; 
@@ -2799,7 +2799,7 @@ footer p {
 }
 
 /* Case Studies (Danger Zone) Styling */
-.armure-danger-zone {
+.armor-danger-zone {
     background: linear-gradient(135deg, #fff5f5 0%, #ffffff 100%);
     border-top: 2px solid rgba(150, 12, 12, 0.1);
 }
@@ -2810,19 +2810,19 @@ footer p {
 }
 
 /* Advantage Features Styling */
-.armure-adv-feature {
+.armor-adv-feature {
     padding-top: 18px;
     border-top: 1px dashed #e2e8f0;
 }
 
 /* Features Grid - 2 Column Layout */
-.armure-grid-2col {
+.armor-grid-2col {
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 20px !important;
 }
 
 /* Feature Cards Premium Look */
-.armure-feature-card {
+.armor-feature-card {
     background: #ffffff;
     border-left: 4px solid #960c0c;
     border-top: none !important;
@@ -2833,7 +2833,7 @@ footer p {
     box-shadow: 0 10px 30px rgba(0,0,0,0.03);
 }
 
-.armure-feature-card .num {
+.armor-feature-card .num {
     background: #000000;
     color: #ffffff;
     font-family: 'Courier New', Courier, monospace;
@@ -2841,13 +2841,13 @@ footer p {
 }
 
 /* Modal Premium Look */
-.armure-modal {
+.armor-modal {
     border: 1px solid #e2e8f0;
     padding-top: 0 !important;
     overflow: hidden;
 }
 
-.armure-modal-header {
+.armor-modal-header {
     background: #0f172a;
     color: #ffffff;
     padding: 20px;
@@ -2858,9 +2858,9 @@ footer p {
     margin: 0 -40px 20px -40px;
 }
 
-/* Responsive Fix for ARMURE Grid */
+/* Responsive Fix for ARMOR Grid */
 @media (max-width: 768px) {
-    .armure-grid-2col {
+    .armor-grid-2col {
         grid-template-columns: 1fr !important;
     }
 }
