@@ -120,14 +120,14 @@ nav.scrolled {
     font-variant: normal !important;
     font-size: 24px;
     font-weight: bold;
-    color: #960c0c;
+    color: #770A09;
 }
 
 .logo-tagline {
     font-size: 7.5px;
-    color: #777777;
+    color: #133F37;
     letter-spacing: 2px;
-    font-family: "Segoe UI Semibold", "Segoe UI", sans-serif;
+    font-family: "Arial Rounded MT Bold", Arial, sans-serif;
     font-weight: 600; /* Semibold effect ke liye ye bhi add karna achha rehta hai */
     text-align: center;
     width: 100%; /* Ye isliye taaki element puri width le le aur text center ho sake */
@@ -361,7 +361,7 @@ footer {
 .logo-section .tm-icon {
     font-size: 0.2em;                        /* Size header ke liye */
     font-family: Arial, Helvetica, sans-serif !important; /* Ye 'nasalization' font ko override karega */
-    color: #960c0c;                          /* Header ke hisaab se Red color */
+    color: #770A09;                          /* Header ke hisaab se Red color */
     vertical-align: super;
     margin-left: 2px;
 }
