@@ -113,7 +113,7 @@ function initFormHandler() {
 
             fetch(scriptURL, { method: "POST", body: new FormData(form) })
                 .then(response => {
-                    responseMessage.innerText = "Thank you! Your message has been sent successfully.";
+                    responseMessage.innerText = "Thank you! Your message has been sent successfully. Our team will get back to you shortly.";
                     responseMessage.style.color = "#94a3b8";
                     form.reset();
                 })
