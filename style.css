@@ -2240,7 +2240,7 @@ footer {
     border: none;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12); 
     overflow: hidden;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     height: 700px;
 }
